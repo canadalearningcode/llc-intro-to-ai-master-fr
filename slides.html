@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Ladies Learning Code</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- Takes care of CSS3 prefixes -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+  
+  <!-- opens all links in a new window -->
+  <base target="_blank">
+</head>
+
+<!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
+<body class="en" data-duration="360">
+  
+  <!-- <section class="slide" data-markdown>
+    <script type="text/template">
+      #Ladies Learning Code Slide Template
+      
+      Created by [Parinaz Sobhani](http://georgianpartners.com) for Ladies Learning Code.
+      
+      View the slide presentation for instructions regarding content, customization options and style guides.
+      
+      Email questions & comments to <content@ladieslearningcode.com>.
+    </script>
+  </section> -->
+  
+  <main>
+    <section class="slide welcome highlight">
+      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Welcome!</h1>
+      
+      <div class="instructions">
+        <!-- ADD WIFI INFO HERE -->
+        <h2>Get Connected</h2>
+        <p><strong>Wifi:</strong> HackerYou</p>
+        <p><strong>Password:</strong> Thisishackeryou</p>
+        <hr>
+        
+        <h2>Download<br> & Install</h2>
+        <ol class="downloads">
+          <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-intro-to-ai-master/archive/master.zip">http://bit.ly/llc-intro-to-ai</a>
+            <ul>
+              <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
+              <li>open <em>slides.html</em> in the browser to view the slides</li>
+            </ul>
+          </li>
+          <li>Dataiku: <a href="https://www.dataiku.com/">https://www.dataiku.com/</a></li>
+          <li>Chrome Browser: <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
+          </li>
+        </ol>
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Content created by <a href="https://georgianpartners.com/team_member/parinaz-sobhani/">Parinaz Sobhani</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
+    </section> 
+    
+    <section class="slide intro">
+      <img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">
+      <h1 class="heading-bg">
+        <span>Introduction to <br>Artificial Intelligence</span>
+      </h1>
+      
+      <!-- FILL IN INSTRUCTOR DETAILS -->
+      <img class="instructor" src="framework/img/workshop/Parinaz.jpg" alt="Instructor Name">
+      <h2><span class="cursive">with</span> Parinaz Sobhani</h2>  
+      <ul>
+        <!-- <li><a href="mailto:">hello@email.com</a></li> -->
+        <!-- <li><a href="https://georgianpartners.com/team_member/parinaz-sobhani/">https://georgianpartners.com/team_member/parinaz-sobhani/</a></li> -->
+        <li><a href="http://twitter.com/PariAIML">@PariAIML</a></li>
+      </ul>
+      
+      <div class="sponsor">
+        <p>In partnership with<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
+      </div>
+
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Content created by <a href="https://georgianpartners.com/team_member/parinaz-sobhani/">Parinaz Sobhani</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+      </footer>
+    </section> 
+        <section class="slide two-col-list" data-markdown>
+             <script type="text/template">
+               #Agenda
+               
+               <div class="table-of-contents"></div>  
+             </script>
+           </section>
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            # Today's Project
+            Today we'll be exploring data to solve problems! 
+
+            1. First we'll learn about databases by collecting data and entering it into our own database.
+            2. We'll be given a challenge and solve it using machine learning to predict the future.
+            3. We'll find our own challenge to solve. 
+
+            <img width="40%" src="framework/img/workshop/hilary-shocked.gif" alt="Hilary Clinton shocked">
+          </script>
+        </section>
+            <section class="slide title" data-markdown>
+              <script type="text/template">
+                # What is AI?
+                
+              </script>
+            </section>
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+      # What is AI?
+
+      Artificial intelligence (AI) is an area of computer science that involves the creation of machines that work and react like humans. 
+      
+       <img width="50%" src="framework/img/workshop/ai-william.gif" alt="AI Robot">
+      </script>
+    </section>
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            # What is AI? cont'd
+
+            Some of the human activities that could be programmed using artificial intelligence include:
+            
+            - **Computer vision:** ability of computers to identify objects, scenes, and activities in images
+            - **Natural Language Processing:** ability of computers to understand meaning from text or generating text that is readable
+            - **Speech Processing:** automatically transcribing human speech or generating speech from the corresponding text
+
+
+            <hr>
+            ###Resources
+            [Demistifying AI](http://www.theatlantic.com/sponsored/deloitte-shifts/demystifying-artificial-intelligence/257/)
+
+          </script>
+        </section>
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            # Where is AI used today?
+            Despite it seeming like a technology far off into the future, Artificial Intelligence and Machine Learning are part of many of the tools we use every day. Here are just a few: 
+
+            <img src="framework/img/workshop/googlemaps-logo.png" alt="google-maps" width="150" style="float:left; margin-right: 30px">
+            **Google Maps** uses AI to update addresses and street names based on street view pictures. 
+            <br style="clear:both">
+            <br style="clear:both;margin-top: 50px;">
+            <img src="framework/img/workshop/FB-f-Logo__blue_100.png" alt="fb" width="150" style="float:left; margin-right: 30px">
+            **Facebook** uses AI to analyze text posted by users and better suggest ads they may need or be interested in. It also uses AI to analyse photos and identify faces.
+            <br style="clear:both;margin-top: 50px;">
+            <br style="clear:both;margin-top: 50px;">
+            <img src="framework/img/workshop/amazon-logo_transparent.png" alt="amazon" width="150" style="float:left;  margin-right: 30px">
+            **Amazon** uses AI for it’s suggested purchases predicting algorithm. 
+
+          </script>
+        </section>
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            # 5 Artificial Intelligence Stats That Will Blow You Away
+            1. AI bots will power 85% of customer service interactions by 2020
+            1. Self-driving cars will save an estimated 300,000 lives per decade by reducing fatal traffic accidents
+            1. AI will replace 16% of jobs over next decade
+            1. Digital assistants will "know you" by 2018
+            1. 6 billion devices will request AI support
+
+
+            <hr>
+            ### Resources
+            - [From Motley Crew](https://www.fool.com/investing/2016/12/10/9-artificial-intelligence-stats-that-will-blow-you.aspx)
+            - [More From Motley Crew](https://www.fool.com/investing/2016/06/19/10-stats-about-artificial-intelligence-that-will-b.aspx)
+
+          </script>
+          </section>
+            <section class="slide title ai-history" data-markdown>
+              <script type="text/template">
+                # History of AI
+              </script>
+            </section>
+        
+            <section class="slide" data-markdown data-doc>
+              <script type="text/template">
+                # History of AI: A New Age? 
+
+                
+<div class="flex">
+<div>
+  <h2>Industrial Age</h2>
+  <h3>19th Century</h3>
+  <p style="background: #b109aa; color: white"><strong style="color: white;"> Machines take away the dirty work.</strong></p>
+  <p>Industrial equipment from looms to the cotton gin. </p>
+  <p>Machines relieve humans of onerous manual labour. </p>
+</div>
+                    
+                   
+<div>
+  <h2>Information Age</h2>
+  <h3>20th Century</h3>
+  <p style="background: #b109aa; color: white"><strong style="color: white;">Machines take away the dull and routine work.</strong></p>
+  <p>Automated interfaces from airline kiosks to call centers.</p>
+  <p>Technology relieves humans of routine transactions and clerical chores. </p>
+</div>
+                    
+<div>
+  <h2>2nd Machine Age</h2>
+  <h3>21st Century</h3>
+  <p style="background: #b109aa; color: white"><strong style="color: white;">Machines take away decisions.</strong></p>
+  <p>Intelligent systems from airfare pricing to health diagnostics</p>
+  <p>Algorithms make better choices than humans reliably and fast.</p>
+</div>
+</div>
+                  
+              </script>
+            </section>
+                <section class="slide" data-markdown>
+                  <script type="text/template">
+                    # Why Now? 
+
+                    Artificial Intelligence is rapidly moving from the laboratory towards business and consumer application.
+                    
+                    - <strong>Big Data</strong>: Live, interactive, automatically generated, and often self-correcting data that fuels real-time decisions and real-time responses.
+                    - <strong>Cheaper Computing</strong>: Cloud computing, massively parallel processing and new CPUs are powering AI techniques that simply weren’t practical before.
+                    - <strong>Better Algorithms</strong>: AI techniques have existed for decades but there is a surge in innovation and performance with the rapid growth in computational infrastructure, data and sensors.
+                  </script>
+                </section>
+            <section class="slide" data-markdown data-toc>
+              <script type="text/template">
+                # History of AI: Notable Dates
+                <table>
+                  <tr>
+                    <td><strong style="background: #b109aa; color: white;">1763</strong> Thomas Bayes develops a framework for reasoning about the probability of events. Bayesian inference will become a leading approach in machine learning.</td>
+                    <td><img src="framework/img/workshop/Thomas_Bayes.gif" alt="Thomas Bayes"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="framework/img/workshop/capek-robot.jpg" alt="Capek with robot"></td>
+                    <td><strong style="background: #b109aa; color: white;">1921</strong> Czech writer Karel Čapek introduces the word "robot" in his play R.U.R. (Rossum's Universal Robots). The word "robot" comes from the word "robota" (work).</td>
+                  </tr>
+                  <tr>
+                    <td><strong style="background: #b109aa; color: white;">1950</strong> Alan Turing publishes “Computing Machinery and Intelligence” in which he proposes “the imitation game” which will later become known as the “Turing Test.”</td>
+                    <td><img  src="framework/img/workshop/turing.jpg" alt="Turing"></td>
+                  </tr>
+                  <tr>
+                    <td><img  src="framework/img/workshop/wp-Marvin-Minsky-Claude-Shannon-Ray-Solomonoff-Plus-2-Dartmouth-1956-Conference.jpg" alt="Marvin and friends"></td>
+                    <td><strong style="background: #b109aa; color: white;">August 31, 1955</strong> The term “artificial intelligence” is coined in a proposal for a “2 month, 10 man study of artificial intelligence” submitted by John McCarthy (Dartmouth College), Marvin Minsky (Harvard University), Nathaniel Rochester (IBM), and Claude Shannon (Bell Telephone Laboratories). The workshop, which took place a year later, in July and August 1956, is generally considered as the official birthdate of the new field.</td>
+                  </tr>
+                  <tr>
+                    <td><strong style="background: #b109aa; color: white;">1961</strong> The first industrial robot, Unimate, starts working on an assembly line in a General Motors plant in New Jersey.</td>
+                    <td><img src="framework/img/workshop/unimate-robot.jpg" alt="Unimate Robot"></td>
+                  </tr>
+                  <tr>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/qDrDUmuUBTo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></td>
+                    <td><strong style="background: #b109aa; color: white;">1968</strong> The film 2001: Space Odyssey is released, featuring Hal a sentient computer</td>
+                  </tr>
+                  <tr>
+                    <td><strong style="background: #b109aa; color: white;">2009</strong> Google starts developing, in secret, a driverless car. In 2014, it became the first to pass, in Nevada, a U.S. state self-driving test.</td>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/uHbMt6WDhQ8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></td>
+                  </tr>
+                  <tr>
+                    <td><img src="framework/img/workshop/leesedolvsAl.jpg" alt="Lee Sedol vs AlphaGo"></td>
+                    <td><strong style="background: #b109aa; color: white;">March 2016</strong> Google DeepMind's AlphaGo defeats Go champion Lee Sedol.</td>
+                  </tr>
+                </table>
+
+<hr>
+### Resources
+- [More history](https://www.forbes.com/sites/gilpress/2016/12/30/a-very-short-history-of-artificial-intelligence-ai/#22672d226fba)
+
+              </script>
+            </section>
+
+                <section class="slide women-in-ai" data-toc data-markdown>
+                
+                  <script type="text/template">
+                  # History of AI: Notable Women
+
+                  While the AI sector has been historically dominated by men, women are also making contributions to the field of Artificial Intelligence. Some of them work right here, in Canada. 
+                  
+                  In 2005, four women, organized the first "Women in Machine Learning Conference". The conference has now been running for over 10 years and WiML has a directory of women in Machine Learning, 1000 women strong. 
+
+                  ![Women in ML across the world](framework/img/workshop/women-in-machine-learning.png)
+
+  
+                  ## These are just a few of the amazing women working in Machine Learning and Artificial Intelligence in Canada and around the world: 
+                  
+                  ![Nancy Reid](framework/img/workshop/nancy-reid.jpg)
+                  Dr. Nancy Reid is a University Professor of Statistical Sciences at the University of Toronto. She is an Officer of the Order of Canada and the Director of the Canadian Statistical Sciences Institute. She works in statistical inference, with an emphasis on likelihood-based methods and higher order asymptotics.
+
+                  ![Kathryn Hume](framework/img/workshop/kathryn-hume.jpg)
+                  Dr. Kathryn Hume - Product management and marketing lead for Integrate.ai, a startup helping large enterprises reinvent customer engagement by applying new AI technologies.
+
+                  ![Bonolo Mathibela](framework/img/workshop/bonolo-Mathibela.jpg)
+                  Dr. Bonolo Mathibela is a Machine Learning Scientist at IBM Research Africa, where she builds machine learning models that autonomously improve road traffic flow.
+
+                  ![Kiri Wagstaff](framework/img/workshop/kiri-wagstaff.jpg)
+                  Dr. Kiri Wagstaff is a Principal Researcher in Machine Learning and Tactical Uplink Lead for the Opportunity Mars Rover (Mars Exploration Rovers) at the NASA Jet Propulsion Laboratory. She develops machine learning methods for spacecraft and space applications.
+
+                  
+
+                 
+
+<hr>
+###Resources
+
+[More bios](http://wimlworkshop.org/directory-of-women-in-machine-learning/),
+[Even more bios](https://www.forbes.com/sites/mariyayao/2017/05/18/meet-20-incredible-women-advancing-a-i-research/#7bb6e3e726f9),
+[Quam Proxime, Kathryn Hume's enlightening blog on AI](https://quamproxime.com/)
+                  </script>
+          
+                </section>
+  <section class="slide title why-care" data-markdown>
+    <script type="text/template">
+      # Why should you care? 
+    </script>
+  </section>
+  <section class="slide" data-markdown>
+    <script type="text/template">
+    # Why should you care?
+
+      ## 1. Without women and underrepresented groups, AI can have terrible consequences: 
+
+      - When Siri was first introduced into the iPhone it was not able to understand women's voices because it had only been trained with male voices. 
+      - An AI system designed by Northpointe in the US to predict the likelihood that an alleged offender will commit another crime in the future was shown to demonstrate racial bias in its predictions.
+    </script>
+  </section>
+  <section class="slide" data-markdown>
+    <script type="text/template">
+      # Why should you care?
+
+      ## 2. We need to solve the problems of each of us, not just the loudest amongst us.
+
+      We all need to care about being represented in the datasets and algorithms being used in AI today so that the machines that are made to help humanity, also help us. 
+    </script>
+  </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Why should you care? 
+
+
+        ## 3. Women stand to lose more in an automated world: 
+        
+        According to the World Economic Forum, "twice as many women than men are likely to lose their jobs as automation replaces human labor." This is due to the fact that most jobs that can be automated are held by women. (e.g. cashiers)
+
+        <img class="medium-image" src="framework/img/workshop/cashier.jpg" alt="cashier">
+      </script>
+    </section>
+<section class="slide" data-toc data-markdown>
+<script type="text/template">
+# Why should you care? 
+
+## 4. Because our lives could be better!
+
+Think about all the amazing apps that already make our lives better thanks to data and AI.
+
+1. Chatbots: 
+<iframe src="https://player.vimeo.com/video/162458358" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+2. Traffic Data: Waze
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PPpZNzXqId0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+</script></section>
+
+                          <section class="slide" data-markdown>
+                            <script type="text/template">
+                            # Why should you care?
+                              ## 5. Because with AI you can change the world!
+                              
+                              AI is a fascinating field of discovery that can solve problems. So, why not get involved?
+
+                              ![hidden figures](framework/img/workshop/hidden-figures-gif.gif)
+                              <hr>
+                              ### Resources
+                              - [Why Women Are Twice As Likely As Men To Lose Their Jobs to Robots](https://www.weforum.org/agenda/2017/07/why-women-are-twice-as-likely-as-men-to-lose-their-job-to-robots)
+                              - [Why we need diversity before ai takes over](http://www.lightreading.com/artificial-intelligence-machine-learning/why-we-need-diversity-before-ai-takes-over/a/d-id/729871)
+                              - [Women vs the machine](http://foreignpolicy.com/2017/01/16/women-vs-the-machine/)
+                              - [https://www.partnershiponai.org/#s-goals](https://www.partnershiponai.org/#s-goals)
+                              - [An important group of women is changing things](https://www.fastcompany.com/3062932/mind-and-machine/ai-is-a-male-dominated-field-but-an-important-group-of-women-is-changing-th)
+
+                            </script>
+                          </section>
+                        <section class="slide title data-everything" data-markdown>
+                          <script type="text/template">
+                            # Data
+                            ##Data is everything.
+                          </script>
+                        </section>
+                    <section class="slide" data-markdown data-toc>
+                      <script type="text/template">
+                      # What is Data
+
+                        Data is everything. More specifically, data is information. 
+
+                        - As humans we start interpreting data from the moment we're born. As soon as we perceive the world around us for the first time, we are collecting and processing data.
+                        - Data is also being collected all the time about our own actions and interactions by others
+                        - Can you think of examples of when and where data about you is collected on a regular basis?
+                          - stores ?
+                          - government ?
+                          - websites ?
+                          - satellites ?
+
+                      </script>
+                    </section>
+        <section class="slide" data-toc data-markdown>
+          <script type="text/template">
+            # What are databases? 
+            Databases are where data is saved and organized. Here are some examples of databases you might have seen before:
+
+            1. <img src="framework/img/workshop/rolodex-animated.gif" width="50%" style="float: right;" alt="rolodex"> The Old School Rolodex
+            (These were used to keep addresses organized in the old days when cell phones didn’t exist.)
+
+            
+
+            <img width="50%" style="margin-right: 10px;clear: right; float: left;" src="framework/img/workshop/sample-db.png" alt="data table"><p style="margin-left: 20px;clear: right;">2. The Spreadsheet (You may have seen one on Excel, Google Sheets or Numbers)</p>
+
+            
+
+            
+
+          </script>
+        </section>
+            <section class="slide" data-markdown>
+              <script type="text/template">
+                # Structured vs Unstructured Data
+
+                When we think of databases we're thinking of structured data. That is, data that can be neatly categorized and searched by a computer algorithm. 
+
+                Unstructured data is a bit more messy and cannot neatly be categorized. Think for example of a **photo library**. We can now catalog our photos using advanced data markers like geo-tags, time stamps and even face recognition, but it's still very hard for a computer to really know what a photo is about. 
+
+              </script>
+            </section>
+        <section class="slide" data-toc data-markdown>
+          <script type="text/template">
+            #Exercise 1: Our First Database (20 mins)
+
+            1. Get into a team of 4 with the students around you.
+            1. Select a team Data Input Specialist who will fill in everyone’s information in the database.
+            1. Go to the spreadsheet at: http://bit.ly/llc-ai-dataset 
+            1. Go around your circle and give the Data Input Specialist the following information to enter into the spreadsheet. Be sure to only use the options listed below: 
+              - Age Range: 18-29, 30-40, 40-50, 50+
+              - The number of hours watching TV per week
+              - The number of hours in social media per week
+              - The latitude of the city you're in (Clue: if the latitude is N of the equator, just add the number. if the latitude is S of the equator, add a "-" in front of the number. Do not add letters or non-numerical symbols to this column)
+              - The longitude of the city you're in (Clue: if the longitude is E of the prime meridian, just add the number. if the longitude is W of the prime meridian, add a "-" in front of the number. Do not add letters or non-numerical symbols to this column)
+              - Favourite Colour
+              - Favourite Protein: Fish, Beef, Chicken, Vegetarian/Vegan
+              - Favourite Film Genre: Comedy, Pork, Horror, Romantic Comedy, Drama, Action, Documentary
+              - Favourite Music Genre: Rock n Roll, Rap, Hip Hop, Punk, Classical, Indie, Pop, Jazz, World, Latin
+              - Favourite Pet: Cat, Dog, Fish, Other
+              
+              It will start looking like this: 
+              ![starter db](framework/img/workshop/spreadsheet.png)
+          </script>
+        </section>
+            <section class="slide" data-markdown>
+              <script type="text/template">
+              #Database Files
+
+                Databases can be saved in various formats.
+
+                Today we will be using datasets saved as **CSV files** (filename.csv) . CSV stands for *Comma Separated Values* because rows of data are saved separated by commas. 
+
+                CSV files are really useful because they enable you to easily transfer data from one program to another. 
+
+                We’ve been using Google Sheets so far but soon we’ll want to look at our data using data analysis software and CSV is compatible with it and most similar software.
+
+                Let's compare: 
+
+                1. Data in our table: 
+                ![starter db](framework/img/workshop/spreadsheet.png)
+
+                2. Data in a csv file: 
+                ```CSV
+                Age Range,Weekly Hours of TV,Weekly Hours on Social Media,Favourite Color,Favourite Protein,Favourite Film Genre,Favourite Music Genre,Favourite Pet
+                30-40,5,2,Red,Fish,Romance,Indie,Cat
+                ```
+
+
+
+
+              </script>
+            </section>
+    
+      <section class="slide" data-markdown>
+        <script type="text/template">
+          # Class Exercise: Create a CSV File From Google Sheets
+
+          Let's create our first CSV file from the dataset we built in Google Sheets to understand this type of file a bit more. 
+
+          1. Open up the Google Sheet at [http://bit.ly/llc-ai-dataset](http://bit.ly/llc-ai-dataset). Be sure not to tamper with any of the data in the sheet. 
+          1. Go to File > Download As > Comma Separated Values
+          1. Your file will begin downloading. Be sure to move your file into the **exercise-files** folder for this class. 
+
+        </script>
+            
+      </section>
+      <section class="slide title" data-markdown>
+              <script type="text/template">
+                # DATAIKU
+                ##Data Science Studio
+              </script>
+            </section>
+          <section class="slide" data-markdown>
+            <script type="text/template">
+              #Dataiku
+
+              Today we will be using Dataiku to visualize and analyze our datasets. Dataiku is a platform that enables us to analyse our data and (later), run machine learning algorithms on our data, using a friendly Graphical User Interface(GUI). If we want, it also allows us to look behind the interface at the code itself to make changes. 
+            </script>
+          </section>
+          <section class="slide" data-markdown>
+              <script type="text/template">
+                # Online Option
+
+                Go to the Get Started page on [dataiku.com](http://dataiku.com) and request the 14 day Free Trial. This will run in your Chrome or Firefox browser without any issues, as long as you’re connected to the internet. 
+                
+                ![request trial](framework/img/workshop/request-trial.png)
+
+                Create an account and wait for the e-mail confirmation to come in. This could take 5-10 mins so feel free to take a break while you wait!
+
+                If you do not have internet, go to the next slide.
+
+
+              </script>
+            </section>
+
+              <section class="slide" data-toc data-markdown>
+                <script type="text/template">
+                  # Offline Option for Mac: Installing Dataiku on an Apple Computer (15 mins)
+
+                  1. Wait for the USB from the instructor with offline versions of dataiku and all the software you will need.
+                  1. Open the DMG file and drop the application into the Applications folder.
+                  1. Open up the application by finding it with Spotlight or clicking on its icon in the Applications folder. 
+                  1. You may need to authorize Dataiku to run on your OS. If so, Open System Preferences, go to "Security & Privacy" and authorize the application
+                  DSS opens automatically in your browser (only Chrome and Firefox are supported). To reopen DSS, click on the DSS logo in the menubar or browse to [http://localhost:11200](localhost:11200)
+                  1. Dataiku requires that you register for an account when you load up the app the first time. It's free. It may take 5-10 minutes to receive your account confirmation so this is a good time for a break.
+
+                </script>
+              </section>
+        <section class="slide" data-toc data-markdown>
+          <script type="text/template">
+            # Offline Option: Installing Dataiku on a Windows Computer (15 mins)
+
+            ## For Windows computers, we’ll be using the Virtual Box option since Dataiku only runs locally on Linux and Apple computers. Get the USB from the instructor/mentor with the software you need.
+            1. Move the files from the Windows Installation folder to your computer.
+            1. Run the .exe file inside the folder to install Virtual Box.
+            1. Import the Data Science Studio Virtual Machine from the folder into Virtualbox (either by double-clicking or using File > Import Appliance)
+            1. The Appliance import wizard opens. You should not need to change any setting. Simply click on Import.
+            1. Once the virtual machine is imported, click on Start. The virtual machine boots.
+            1. Once the Virtual Machine has finished booting, it displays a welcome banner with connection details.
+            1. You do not need to login into the virtual machine. Open your regular Chrome or Firefox browser (ie: not in the virtual machine). In that browser, open the URL that is displayed in the welcome banner, as "Data Science Studio interface". The DSS interface appears. This URL to open is often http://127.0.0.1:10000 (but not always, please check the welcome banner).
+            1. Dataiku requires that you register for an account when you load up the app the first time. It's free,but it may take you 10 minutes to get the confirmation e-mail if you haven't done this before. So go grab a coffee. 
+
+
+          </script>
+        </section>
+            <section class="slide title" data-markdown style="background: url(framework/img/workshop/coffeebreak.gif") center 100% no-repeat;>
+              <script type="text/template">
+                # Installation Break 
+              </script>
+            </section>
+    
+       <section class="slide" data-toc data-markdown>
+         <script type="text/template">
+           # What goes in a database?
+
+           What kinds of information can we add to a database? If information is EVERYTHING, how do we store that in a computer in a way that it will understand? 
+           
+           There are established **types** of data that we can define in a database. For example:
+
+            - Integer (int, whole numbers)
+            - Float (float, numbers containing decimals)
+            - String (str, words, sentences, literal text)
+            - Boolean (True, False)
+            - Bytes and byte arrays, e.g. a jpeg image file.
+
+         </script>
+       </section>
+      <section class="slide" data-toc data-markdown>
+        <script type="text/template">
+          # Data Types
+          ## Integers (Int)
+          These are whole numbers (no decimals). E.g. The number of attendees that came to your party = 35.
+          ## Float(float)
+          These are decimal numbers. E.g. Usain Bolt’s 100m world-record-breaking running speed: 9.58 seconds.
+          ## String (str)
+          Strings are words, sentences or text. E.g. Your favourite colour: “Red”
+          ## Booleans 
+          True or False. E.g. Are you attending your friend’s wedding? Yes(True). 
+          ## Bytes and byte arrays
+          This datatype is used for images such as jpegs.
+
+        </script>
+      </section>
+          <section class="slide" data-toc data-markdown>
+            <script type="text/template">
+              # Class Exercise: Our First Dataiku Project
+
+              Now that we have an account in Dataiku, let's import the csv file we created in Google Sheets into our first Dataiku project. 
+
+              1. If you have the cloud edition, just go back to the dataiku website where you left off. If you installed the offline versions, Go to dataiku in your browser. (http://localhost:11200 on a mac and most likely  http://127.0.0.1:10000 if you’re on Virtual Machine. )
+              1. Select the plus sign on the left hand corner to create a new project. ![new project](framework/img/workshop/new-project-plus.png)
+              1. Give your project a name. E.g. “My first Data project”
+              ![project name](framework/img/workshop/new_project_name.png)
+              1. Import your first dataset. (this is the CSV file we created in Google Sheets) ![import button](framework/img/workshop/import-first-dataset.png)
+              1. There are lots of ways to import datasets. We want to click on “Upload Files” under “Files”. 
+              1. Select the CSV file you created earlier in Google Sheets. You’ll be able to preview it right away.
+              1. Click Create to finish the import. ![create](framework/img/workshop/create-dataset.png)
+              
+              Here's an animation of the process of uploading your dataset: 
+              ![import dataset](framework/img/workshop/import_dataset.gif)
+
+            </script>
+          </section>
+              <section class="slide" data-toc data-markdown>
+                <script type="text/template">
+                  # Exercise 3: Explore the Data (15 minutes)
+
+                  Now it’s time to explore the data! 
+
+                  1. Once you click create, you should be sent directly the table of data with the exploration menu at the top. If not, click on the “Data sets” icon from the dashboard. 
+                  1. The dataset should open and enable you to explore using the exploration menu above it. 
+                  1. On the menu above it click on "Explore" ![data dashboard menu](framework/img/workshop/explore-menu.png)
+                  1. In the Explore tab you can see all of your data in table format. In the top row you’ll see that every single column is first recognized as a string. This is because all CSV file values are stored as strings. Below the String you’ll see the actual data type DataIku will recognize for each of your columns. Are they all correct? Check against the data type definitions we talked about eariler. 
+                  1. Create a chart! If you go into the Charts tab you can start playing around with some data visualization! The default chart is a Histogram Bar Graph. You can change the type of graph you want by clicking on the graph-type dropdown. ![graph-dropdown](framework/img/workshop/graph-type-dropdown.png)
+                  1. You’ll notice that some chart fields can only be filled with numerical columns. For instance, the Y column of your bar graph, must be a numerical data type for it to work. Play around with the columns and charts and see if there's any correlation between them! Have fun! 
+                  ![show by](framework/img/workshop/X-Y-VALUES.png)
+                  1. Bonus: Experiment with some of the geographical charts and your longitude and latitude columns! See if you can map everyone's favourite colour by location! 
+
+                </script>
+              </section>
+                  <section class="slide" data-markdown>
+                    <script type="text/template">
+                      # Let's use Data to solve problems!
+
+                      Now that we have explored our simple database, let's work with some real data. 
+
+                      **Problem:** The HR Department at IBM has a problem. They want to reduce the number of employees that leave the company. 
+
+                      **Solution:** In a dream world, the HR department would like to be able to predict which employees are most likely to leave the company so that they can stop them with new incentives. 
+
+                      How do we implement this solution? Machine learning. 
+                      <img src="framework/img/workshop/willis.gif" alt="Willis">
+                    </script>
+                  </section>
+                  
+                  <section class="slide title" data-markdown>
+                          <script type="text/template">
+                            # Machine Learning
+                          </script>
+                        </section>
+                      <section class="slide" data-toc data-markdown>
+                        <script type="text/template">
+                        #What is Machine Learning? 
+
+                        Machine learning involves feeding data into a special kind of computer program, specifying a particular outcome, and having a machine develop its own algorithm to achieve the outcome. (Will Knight, July 20, 2017)
+                        
+                        For instance, presented with a database of information about credit card transactions, such as date, time, merchant, merchant location, price, and whether the transaction was legitimate or fraudulent, a machine learning system learns patterns that are predictive of fraud.
+
+                        - Traditionally data goes into the computer, the algorithm does its job **and gives out the result**.
+                        - Learners turns this around: in goes the data and the desired result and **out comes the model** that turns one into the other.
+                        - Learners are algorithms that make models **capture decision and action rules**.
+                        - They learn knowledge / process that **underlie skills**
+
+                        <hr>
+                        ### Resources
+                        [AI Fight Club Could Help Save Us from a Future of Super-Smart Cyberattacks](https://www.technologyreview.com/s/608288/ai-fight-club-could-help-save-us-from-a-future-of-super-smart-cyberattacks/)
+                        
+                        </script>
+                      </section>
+     
+                      <section class="slide" data-markdown>
+                        <script type="text/template">
+                          # Machine Learning is a core of AI
+
+                          <img src="framework/img/workshop/ai-ml-dl-01.svg" alt="AI, ML, DL" width="50%" style="display: block; margin: 0 auto;">
+                        </script>
+                      </section>
+                          <section class="slide" data-markdown>
+                            <script type="text/template">
+                              # ML Terms
+                              **Predictions:** model output that predict the outcome by discovering patterns in the data
+
+                              **Model:**  A model is just a mathematical function, which is a relationship between a set of inputs and a set of outputs. Here’s an example:
+
+                              `f(x) = x²`
+
+                              These functions, which are called models, can then be used for predictions. For example, figuring out which employee at IBM is most likely to leave their job next.
+                              
+                              **Learning Algorithm/Method:** An optimization 
+
+
+                            </script>
+                          </section>
+                              <section class="slide" data-toc data-markdown>
+                                <script type="text/template">
+                                  # What are the types of learning approaches? 
+
+                                  - **Supervised**: Learn rules that map inputs to target outputs.
+                                  - **Unsupervised**: Learn to cluster and label similar inputs.
+                                  - **Deep** learn through a hierarchy of simple to complex concepts.
+                                  - **Reinforced**: Learn by continually interacting with an environment.
+
+                                  <img width="50%;" src="framework/img/workshop/urkel.gif" alt="Urkel">
+                                </script>
+                              </section>
+                                  <section class="slide" data-markdown>
+                                    <script type="text/template">
+                                      # Supervised
+
+                                      
+                                      <img  width="60%" src="framework/img/workshop/supervised-learning.svg"  alt="supervised learning ellen selfie">
+
+                                      Supervised learning happens when we feed the computer data and the outcome we want from that data. Then we let the computer find a correlation between the data and the outcome so that it may predict outcomes with new data without us providing the outcome. 
+
+                                      For example: 
+
+                                      1. We could give a computer a set of data about many different patients. 
+                                      2. We could then tell the computer which of those patients have cancer and which ones don't. 
+                                      3. The computer will find a correlation between the patients' data and whether or not they have cancer (that would be the model). 
+                                      4. Then it will use this model which is no more than a mathematical function, to figure out which patients have cancer from the new dataset we give it without outcomes. 
+                                      
+                                      The **goal** is to minimize the error between the model's predictions and the actual outcomes.
+
+                                      In a **perfect world** we would minimize errors on all possible inputs. 
+
+                                      In **reality**, we usually don't have enough inputs with corresponding outcomes to teach the computer well enough.
+          
+
+                                    </script>
+                                  </section>
+
+                                  
+  <section class="slide" data-markdown>
+    <script type="text/template">
+      # Deep Learning
+      
+      <img class="medium-image" src="framework/img/workshop/puppy.jpg" alt="puppy">
+      <img class="medium-image" src="framework/img/workshop/kitten.jpg" alt="kitten">
+
+      Imagine we gave a computer millions of images of puppies and kittens. What characteristics about each might we pick to enable a computer to learn to identify future puppies and kittens? With images it's quite hard. This is where **deep learning** comes in. 
+
+      <img src="framework/img/workshop/deeplearning.png" alt="kitten">
+
+      - Deep neural networks are a subtype of supervised learning. 
+      - Deep networks are multilayer networks on top of each other where each layer corresponds to a different level of abstraction.
+      - There are two main reasons behind the popularity and the high impact of deep neural networks in various fields such as computer vision and speech recognition:
+        - The emergence of modern parallel computing architectures providing low-cost and fast computation for a large number of parameters of the deep networks.
+        - The availability of vast amounts of images, video, speech and text on the Internet providing sufficient data for training these networks.
+      - Each layer in the deep architecture provides a nonlinear information processing. 
+      - The output is a parameterized function of the inputs and the output of each layer is the input for the higher layer. 
+    </script>
+  </section>
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            # Unsupervised Learning
+
+            <img src="framework/img/workshop/clustering-01.svg" alt="AI, ML, DL" width="80%" style="display: block;">
+              In unsupervised learning we give the computer unlabeled data (Input representations without their corresponding outcomes). 
+
+              **The hacker in the haystack:** Imagine if we wanted a computer to figure out which internet users were hackers. We likely wouldn't have enough data for supervised learning so we would instead use unsupervised learning and the computer would find clusters of users, some who could be potential hackers based on online behaviour that is different than normal.
+
+
+              **Clustering:** group data based on some similarity metric.
+
+
+          </script>
+        </section>
+            <section class="slide" data-markdown>
+              <script type="text/template">
+              # Reinforcement Learning
+                <img src="framework/img/workshop/reinforced-learning-01.svg" alt="AI, ML, DL" width="50%">
+
+                - **Training Experience:** the agent interacts with the environment and receives numerical reward signals
+                - **What to learn:** Best action for each state of environment- A behavior that maximize the reward in the long run
+                - **Challenges in RL:** Designing the problem domain: state representation, action choice, cost/reward signal
+                - **Example:** Alpha Go, Self Driving Cars
+
+              </script>
+            </section>
+                <section class="slide" data-toc data-markdown>
+                  <script type="text/template">
+                    # Data Scientists WorkFlow
+
+                    ![scientist workflow](framework/img/workshop/data-science-flow.png)
+                  </script>
+                </section>
+
+            <section class="slide" data-markdown>
+              <script type="text/template">
+                # Data Collection
+                Collecting and preparing the INPUT and the OUTCOME are the most important steps in solving problems using machine learning
+
+                In supervised ML, the model learns from the labeled instances that we feed into the model. The trained model can later be used to predict the outcome of data that you do not have the answer for. 
+
+                ## Each instance in your data must contain two elements:
+
+                - **Input** - The raw input that should be mapped to numerical values as variables/features 
+                - **Outcome** – what you want your model to predict. 
+
+                ## Sources for labeled data:
+
+                - **Experienced data:** Historical data captured from processes with inputs and outcomes.
+                - **Human Annotation:** Providing input to human annotators and ask for the labels
+
+
+              </script>
+            </section>
+                <section class="slide" data-markdown>
+                  <script type="text/template">
+                    # Feature Engineering
+                    
+                    When we talk about features, we're talking about the columns of our database. 
+
+                    The performance of machine learning models significantly depends on the representation of the data 
+                        
+                    Each piece of information included in the representation of the input is called a feature.
+
+                    **Example:** Representing a patient- doctor examines the patient, measures blood pressure, body temperature, takes MRI, CT scan, blood sugar test and provides this information to an AI system as feature inputs
+
+                  </script>
+                </section>
+
+                <section class="slide" data-markdown>
+                  <script type="text/template">
+                    # Exploring the Data
+
+                    Columns are called **input variables** or **features** or **attributes**
+
+                    - The outcome (which we are trying to predict) are called **output variables or targets**
+                    - A row in the table is called **training example or instance**
+                    - The whole table is called the **data set**.
+
+                  </script>
+                </section>
+
+                    <section class="slide" data-markdown>
+                      <script type="text/template">
+                        # Clean, Prepare and Manipulate Data
+
+                        Pre-processing and cleaning data are important tasks that must be applied before using data to train an ML model
+
+                        Why? To avoid "garbage in, garbage out"
+
+                        ## The problems with raw data
+
+                        - Incomplete: having missing values for different attributes per records
+                        - Noisy: non-correct values for some attributes, outliers
+                        - Inconsistent
+                        
+                        ## Preprocessing Steps: 
+                        - **Data cleaning:** fill in missing values, smooth noisy data, identify or remove outliers, and resolve inconsistencies.
+                        - **Data integration:** using multiple databases, data cubes, or files.
+                        - **Data transformation:** normalization and aggregation.
+                        - **Data reduction:** reducing the volume but producing the same or similar analytical results.
+                        - **Data discretization:** part of data reduction, replacing numerical attributes with nominal ones.
+
+                        <hr>
+                        ### Resources
+                        http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.html, https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-data-science-prepare-data
+                      </script>
+                    </section>
+                        <section class="slide" data-markdown>
+                          <script type="text/template">
+                            # Exercise 4: Cleaning the data (8 minutes)
+                            
+                            Now, let's get back to our challenge of figuring out who might leave their job next at IBM so we can stop attrition in its tracks. 
+
+                            1. We’re going to create another project. Click on the plus sign on the left hand side of the DataIku dashboard. Let’s call it “Machine Learning Project”
+                            1. We're then going to download the necessary dataset from [http://bit.ly/llc-ai-hr-dataset](http://bit.ly/llc-ai-hr-dataset)
+                            1. Click on Import Dataset. From the project folder choose the IBM HR Analytics Employee Attrition & Performance file. It looks like a zip file but when you upload it it will become csv. 
+                            1. Click on the create button to finalize the import. 
+                            1. Ensure that all of the column names have been imported properly. 
+                            1. Ensure that all data-types have been identified correctly. **Tip:** There is a mistake on one of the columns! Here's a clue: ![clue](framework/img/workshop/clue.png)
+
+    
+
+
+                          </script>
+                        </section>
+                            <section class="slide" data-markdown>
+                              <script type="text/template">
+                              # Train Machine Learning Models
+                              ##  A supervised machine learning model is a function that takes an input and returns an output
+                                F(X)=y, where F(X) is a “good predictor” for the value of y.
+                                e.g. # of years at the job might be a good predictor of attrition (whether someone will stay or leave their job)
+                              ## Steps to solve a problem using ML:
+                                1. Identify what the input-output pairs are.
+                                2. Encode inputs and outputs.
+                                3. Choose a class of ML models and experimentally find the best model
+
+                                <hr>
+                                ### Resources
+                                [A Non-Technical Introduction to Machine Learning](https://medium.com/safegraph/a-non-technical-introduction-to-machine-learning-b49fce202ae8) 
+
+
+                              </script>
+                            </section>
+                                <section class="slide" data-markdown>
+                                  <script type="text/template">
+                                    # Test the Predictions of the Model
+
+                                    ## How to evaluate the quality of learned model?
+
+                                    - The data is split into two subsets:
+                                         1. A training and validation set used only to find the right function predicator
+                                         2. A test set used to report the prediction error of the model
+                                    - These sets must be disjoint!
+                                    - Normally, we use 70% of the data as a Training and validation set and the rest as a test set
+                                    - In case of having smaller datasets, we use cross-validation
+
+                                  </script>
+                                </section>
+          <section class="slide" data-markdown>
+            <script type="text/template">
+            # Class Exercise: Choosing our inputs and output
+              We need to choose which inputs we will use for our learning, and what the expected output is.
+              <ol>
+                <li>
+                <p>Back in our Machine Learning Project we left off at a cleaned table. Next we'll go to a new place: the Lab</p>
+                <p>Here we'll want to select "Prepare data and build models" in the Visual Analysis option.  <img src="framework/img/workshop/ml-ex/Prepare-data-an-build-models.png" alt="buiod model"></p></li>
+                <li><p>Right click on the column that you want to predict and select "Create prediction model" This column will be the output. In this case we want to predict attrition.</p>
+                <img src="framework/img/workshop/ml-ex/create-prediction-model.png" alt="build models">
+                </li>
+                <li>Start with Decision Tree as it has the best interpretability</li>
+                <li>Press the green Train button. <img src="framework/img/workshop/ml-ex/lab-step-one.gif" alt="1-4"></li>
+                
+              </ol>
+              
+
+              
+
+            </script>
+          </section>
+
+              <section class="slide" data-markdown>
+                <script type="text/template">
+                  #Class Exercise cont'd: Evaluating the inputs:
+
+                  1. You will now see the results of your model. 
+                    - You'll see the most important inputs as determinants of attrition: 
+                  <img src="framework/img/workshop/most-important-variables.png" alt="most important variables chart" class="medium-image">
+                    - <img src="framework/img/workshop/training-test-sets.png" alt="testing vs training data" width="30%" style="display:block; float: right;"> And you will also see a breakdown of how the data was split between training data and testing data. Remember, the training data is given to the computer with labeled outcomes (the attrition column), and the testing data is given without outcomes so that we can test how good the model is at predicting attrition.
+                  2. Now, let's click on the model to explore it even further! 
+                
+
+                </script>
+              </section>
+              <section class="slide" data-markdown>
+                <script type="text/template">
+                  # Class Exercise cont'd: Evaluating the Model
+                  1. <img style="display:block; width: 50%; float: right;" src="framework/img/workshop/decision-tree.png" alt="decision tree"> Once inside our Model we can explore a detailed report of our machine's predictions. First, under the Interpretation menu, take a look at the Decision Tree. You can literally see how the machine made its decisions in the decision tree. 
+
+                  2. <img style="display:block; margin-right: 10px; width: 70%; float: left;" src="framework/img/workshop/variables-bars.png" alt="decision tree">In the **Variables Importance** bar graph we can see a detailed breakdown of each of the columns used and their importance in predicting attrition.
+                  
+                  3. If you click on **Features** under "Model Information", you can see which columns were included as inputs and which ones turned out to be rejected because they were irrelevant. 
+
+                  <img style="display:block;" src="framework/img/workshop/rejected-input.png" alt="decision tree">
+
+                  Are there any features we should also leave out as inputs? Take a look at the Variable Importance chart again.
+                </script>
+              </section>
+
+              <section class="slide" data-markdown>
+                <script type="text/template">
+                  #Class Exercise Cont'd: Evaluating our Model
+
+                  Now we'll explore the performance report of our model and then compare these results after changing a few key settings before training the machine again. 
+
+                  - First we'll examine the classification accuracy of the predictions by observing the **Confusion Matrix**. 
+                    
+                  <img src="framework/img/workshop/confusion-matrix.png" alt="confusion matrix">
+
+                  - Then, you'll see a bar graph showing another four markers of performance: **Precision**, **Recall**, **F1-Score** an **Accuracy**. Dataiku even gives us four handy definitions in the sidebar to the right. 
+                  
+                  <img src="framework/img/workshop/perf-markers.png" alt="performance markers">
+
+- You'll also see the Cost Matrix which enables you to evaluate the amount earned per correct prediction.
+
+<img src="framework/img/workshop/cost-matrix.png" alt="performance markers">
+
+All of these performance metrics can be improved if we run our learning algorithms again and make some amendments beforehand. 
+
+                </script>
+              </section>
+<section class="slide" data-markdown>
+  <script type="text/template">
+    # Understanding performance/quality objectives
+
+    Recognizing that perfect performance is rarely, if ever, possible
+     
+    Performance objectives should be defined based on the end goal for the model that you are building
+    
+    For example, the goal for our HR analysis is to predict which valuable employees will leave next
+    and give them offers of promotion/raise or any other incentive before they find another job
+     
+    Understanding the error tolerance is a critical step in identifying the risks in every model prediction
+
+    For example, the risk of false negatives in diagnosing cancer vs marketing recommendation engine
+
+    In our HR analysis use-case to predict attrition for each employee, which of false negative and false positive are more risky?
+
+  </script>
+</section>
+<section class="slide" data-markdown>
+<script type="text/template">
+# Exercise 5: Change the training settings (10 mins)
+
+Now we'll let you change the training settings to determine which inputs and algorithms might give you the best results.
+
+1. Go back to the Models list. 
+2. Select "Settings" in the upper right hand corner.
+3. Try removing any of the "features" that you have discovered are not really relevant. (e.g. Gender).
+4. Go to Algorithms and enable the Random Forest algorithm and the XGBoost algorithms. Both of these will use multiple decision trees to optimize predictions. 
+5. Click on Train again to run your amended algorithms.
+5. Back in the Models list, can you figure out which of your modes is best? Be sure to look at each of the reports. For a quick decision take a look at the ![roc-auc](framework/img/workshop/roc-auc.png). Which model will you choose? 
+
+</script>
+</section>
+     <section class="slide" data-toc data-markdown>
+    <script type="text/template">
+      # Challenges in Machine Learning
+
+      Overfitting: We can find a hypothesis that predicts perfectly the training data but does not generalize well to new data
+
+      The function ”memorizes” the data points, but is wild everywhere else.
+
+      Typical overfitting means that error on the training data is very low, but error on new instances is high
+
+      - Typical underfitting means that error on the training data is very high
+
+
+    </script>
+  </section>                         
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Improving Results
+        ## Human in the Loop? 
+        ![human in the loop](framework/img/workshop/human-in-loop.png)
+      </script>
+    </section>
+       
+             <section class="slide" data-toc data-markdown>
+              <script type="text/template">
+                # Ethical problems of AI
+                
+                Remember the gender column in our dataset? Was that a relevant column for determining attrition of employees? What about employees that are non-binary? Where will they fall? 
+
+                Here are a few more ethical dilemmas we need to deal with in AI
+
+                1. Unemployment as a result of smart machines taking over jobs.
+                2. Bias in Models: Racist and Sexist Models
+                  - Remember all Ai models have been trained by human behavioural data, so they have inherited all our values and biases
+                  - A study showed that human sequential bias can be found with loan officers approving or denying loan applications.
+                3. Error of the models in production
+                4. Model Black Box: Non-interpretable models - this is typical in deep learning where we may not be able to understand, as humans, how the computer came to the outcome that it did. 
+               
+
+                <hr>
+                ### Resources
+
+                [Benefits and Risks of AI](https://futureoflife.org/background/benefits-risks-of-artificial-intelligence/
+)
+
+              </script>
+            </section>
+            
+               <section class="slide title" data-markdown>
+                 <script type="text/template">
+                   # Probability vs. Certainty
+                 </script>
+               </section>
+            <section class="slide" data-markdown>
+              <script type="text/template">
+              # Discussion! (15 minutes)
+
+              In groups of 4 discuss the following: 
+              
+              ## Problem 1
+              1. If tomorrow you heard that Uber's new self-driving car had crashed and killed its passengers, would you volunteer to be the next passenger? 
+
+              1. If you answered No, would you answer change if the cost of riding in the self-driving Uber was much lower than if you ordered a human driver?
+
+              1. If you answered No, would your answer change if you knew that human drivers have a higher probability of crashing than self-driving cars?
+              
+              ## Problem 2
+
+              1. After going to the doctor, she tells you that based on your AI results, it's 60% likely that you have a deadly disease. When you ask for human confirmation of the certainty of the results, the doctor tells you the AI is much better at predicting cancer than she would be with old-fashioned diagnostic methods.
+
+                  - Would you accept treatment for your disease? 
+                  - Would you wait for a higher probability/more certainty before deciding on treatment? 
+          
+              </script>
+            </section>
+                <section class="slide" data-markdown>
+                  <script type="text/template">
+                    # Probability or Certainty?
+
+                    Based on your group discussions, do you think you're ready to live in a world where probability is the basis of most decisions, or do you still crave certainty? 
+
+                    <img width="60%;" src="framework/img/workshop/cher.gif" alt="Cher from Clueless">
+                  </script>
+                </section>
+            <section class="slide title" data-markdown>
+              <script type="text/template">
+                # Final Exercise
+                ## Work with your own dataset!
+              </script>
+            </section>
+              <section class="slide" data-markdown>
+                <script type="text/template">
+                # Final Exercise (20 minutes or as long you want)
+                  1. Working in teams of 4 or by yourself, think of an issue that is important to you (e.g. climate change, the refugee crisis, cancer) OR think of a problem you're facing at work (e.g. you need to identify donors for your new initiative). Brainstorm ways that Machine Learning may help with the issues you want to solve. 
+                  2. Try to find a dataset related to your issue that you could work with for today. Visit http://kaggle.com or http://opendata.gc.ca for Canadian Government datasets.
+                  3. Create a new project in Dataiku and import your new database. 
+                  4. Clean up your data if needed. 
+                  5. Follow the instructions from our Class Exercise to run a few Machine Learning models on your dataset. 
+                  6. What have you learned from your dataset? 
+                </script>
+              </section>
+                          <section class="didit slide title" data-markdown>
+                            <script type="text/template">
+                              # We did it!!
+                              ## Now it's demo time! 
+                          
+                            </script>
+                          </section>
+                        
+                        
+                            
+                                <section class="slide" data-toc data-markdown>
+                                  <script type="text/template">
+                                    # Next Steps 
+                                    
+                                    ## Learn More: 
+
+                                    - [Udacity](https://www.udacity.com/ai) - checkout the nanodegress in AI, Machine Learning and Deep Learning at Udacity. They also have lots of introductory courses on this platform. 
+                                    - [Machine Learning A-Z at Udemy](https://www.udemy.com/machinelearning/learn/v4/overview) This is a great introduction to ML with big emphasis on Python. 
+                                    - [Machine Learning with Andrew Ng on Coursera](https://www.coursera.org/learn/machine-learning)
+                                    - Want to wrap your mind around Data Science more generally? Checkout this excellent review on the [best Data Science courses online](https://medium.freecodecamp.org/i-ranked-all-the-best-data-science-intro-courses-based-on-thousands-of-data-points-db5dc7e3eb8e)
+  
+                                    ## Continue experimenting with datasets: 
+
+                                    - http://kaggle.com
+                                    - http://opendata.gc.ca 
+                                    
+                                    ## Keep Reading: 
+
+                                    - [Free Code Camp](https://medium.freecodecamp.org/tagged/data-science) Free Code Camp has a blog dedicated to data-science where articles about upcoming courses in AI will come up. 
+                                    - Keep reading [Kathryn Hume's blog](https://quamproxime.com/) for fascinating analysis of the growing AI field
+                                    - [Georgian Partners](https://georgianpartners.com/blog-archive/) in Toronto is a leader in Artificial Intelligence and publishes lots of great posts on their blog. 
+                                  </script>
+                                </section>
+                                <section class="slide title" data-markdown>
+                        <script type="text/template">
+                          # Bonus Exercise
+                          ##Working with Python in Dataiku
+                        </script>
+                      </section>
+                    <section class="slide" data-markdown>
+                      <script type="text/template">
+                        # Python AI Libraries
+
+                        There are a number of helpful Python libraries that make it easier to work with data and machine learning. Code libraries are pre-written code functions that help you quickly accomplish complicated tasks without having to write all your code from scratch. The **sklearn** library is a robust AI library that we'll be working with today. 
+                      </script>
+                    </section>
+                    <section class="slide" data-markdown>
+                      <script type="text/template">
+                        # Machine Learning Steps In Python
+
+                        So far we've worked with a Graphical User Interface on Dataiku. This is what you would have to do if to accomplish the same thing using just Python code: 
+
+                        1. Using sklearn platform.
+                        1. Loading the dataset
+                        1. Initial Preprocessing of the data
+                        1. Creating Training and Test sets
+                        1. Preprocessing: Filling missing values, Handling Categorical Features, Normalizing numerical Features
+                        1. Choose the Classifier mode
+                        1. Train a Classifier using train set
+                        1. Evaluate the learned model
+                        1. Making some predictions
+
+                      </script>
+                    </section>
+                    <section class="slide" data-toc data-markdown>
+                      <script type="text/template">
+                        #  Jump to Jupyter Notebook and Understand the Python code
+                        1. Select the best trained based on the evaluation metrics model
+                        1. Go to Deploy, Jupyter notebook
+                        1. Map each of the steps in previous slide to a cell in Jupyter notebook
+                        1. Run all cells and check the output of each cell
+
+                      </script>
+                    </section>
+                    <section class="slide" data-toc data-markdown>
+                      <script type="text/template">
+                        # Bonus Exercise: Change the Code (20 minutes)
+
+                        In this exercise everyone will get back into groups of 3 and you will manipulate the code inside Jupyter using the Python sklearn library documentation. 
+
+                        1. Switch the Random Forest classifier model to use Logistic Regression. **Hot Tip**: Refer to the [documentation](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
+                        2. Train and test the new model - does the result improve? 
+                        3. Change the evaluation metric to have F-score. Again, use the [documentation for f-score](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html
+                        4. Change the parameters of the LR classifier like solver, Regularization penalty, inverse of regularization strength C and investigate the effect of these changes in the performance of the model. (Reference to these parameters are in the first documentation link at #1)
+)
+                      </script>
+                    </section>
+
+
+    <!-- Last slide -->
+    <section class="slide last">
+      <h1>Thank you!</h1>
+      <h2 class="heading-bg">
+        <span>Introduction to Artificial Intelligence</span>
+      </h2>  
+
+      <img class="instructor" src="framework/img/workshop/Parinaz.jpg" alt="Instructor Name">
+      <h2><span class="cursive">with</span> Parinaz Sobhani</h2>  
+      <ul>
+        <!-- <li><a href="mailto:">hello@email.com</a></li> -->
+        <!-- <li><a href="https://georgianpartners.com/team_member/parinaz-sobhani/">https://georgianpartners.com/team_member/parinaz-sobhani/</a></li> -->
+        <li><a href="http://twitter.com/PariAIML">@PariAIML</a></li>
+      </ul>
+
+      <p class="attribution">Slide presentation created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+    </section>
+
+  </main><!-- cls main section -->
+  
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Uncomment the plugins you need -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Grabs all the .snippet elements
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>

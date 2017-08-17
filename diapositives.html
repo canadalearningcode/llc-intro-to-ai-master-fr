@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Ladies Learning Code</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S'occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+  
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Barre de minutage/proression: indiquez la durée de la présentation en minutes avec « data-duration ». -->
+<body class="en" data-duration="360">
+  
+  <!-- <section class="slide" data-markdown>
+    <script type="text/template">
+      #Modèle de diapositives de Ladies Learning Code
+      
+      Créé par [Parinaz Sobhani](http://georgianpartners.com) pour Ladies Learning Code.
+      
+      Consultez les dispositives pour obtenir des informaitions sur le contenu, les options de personnalisation et les guides de style.
+      
+      Envoyez vos questions et vos commentaires à <content@ladieslearningcode.com>.
+    </script>
+  </section> -->
+  
+  <main>
+    <section class="slide welcome highlight">
+      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Bienvenue!</h1>
+      
+      <div class="instructions">
+        <!-- AJOUTEZ LES INFOS DU WI-FI ICI -->
+        <h2>Branchez-vous</h2>
+        <p><strong>Wi-Fi:</strong> HackerYou</p>
+        <p><strong>Mot de passe:</strong> Thisishackeryou</p>
+        <hr>
+        
+        <h2>À télécharger<br> et à installer</h2>
+        <ol class="downloads">
+          <li>Fichiers des apprenants (dossier zip en français, lien vers les fichiers en anglais): <a href="https://github.com/ladieslearningcode/llc-intro-to-ai-master/archive/master.zip">http://bit.ly/llc-intro-to-ai</a>
+            <ul>
+              <li>Extraire les fichiers des apprenants (<em>Extraire tout</em> sur Windows)</li>
+              <li>Ouvrir le fichier <em>diapositives.html</em> dans le navigateur pour voir les diapositives</li>
+            </ul>
+          </li>
+          <li>Dataiku: <a href="https://www.dataiku.com/">https://www.dataiku.com/</a></li>
+          <li>Navigateur Chrome: <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
+          </li>
+        </ol>
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Contenu créé par <a href="https://georgianpartners.com/team_member/parinaz-sobhani/">Parinaz Sobhani</a> pour <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer</p>
+      </footer>
+    </section> 
+    
+    <section class="slide intro">
+      <img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">
+      <h1 class="heading-bg">
+        <span>Introduction à l'<br>intelligence artificielle</span>
+      </h1>
+      
+      <!-- AJOUTEZ LES INFORMATIONS SUR LE FORMATEUR -->
+      <img class="instructor" src="framework/img/workshop/Parinaz.jpg" alt="Instructor Name">
+      <h2><span class="cursive">avec</span> Parinaz Sobhani</h2>  
+      <ul>
+        <!-- <li><a href="mailto:">allo@courriel.com</a></li> -->
+        <!-- <li><a href="https://georgianpartners.com/team_member/parinaz-sobhani/">https://georgianpartners.com/team_member/parinaz-sobhani/</a></li> -->
+        <li><a href="http://twitter.com/PariAIML">@PariAIML</a></li>
+      </ul>
+      
+      <div class="sponsor">
+        <p>En collaboration avec<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
+      </div>
+
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+        <p class="left">Contenu créé par <a href="https://georgianpartners.com/team_member/parinaz-sobhani/">Parinaz Sobhani</a> pour <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer</p>
+      </footer>
+    </section> 
+        <section class="slide two-col-list" data-markdown>
+             <script type="text/template">
+               #Ordre du jour
+               
+               <div class="table-of-contents"></div>  
+             </script>
+           </section>
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            # Le projet du jour
+            Aujourd'hui, nous découvrirons comment utiliser des données pour résoudre des problèmes! 
+
+            1. Premièrement, nous apprendrons les rudiments des bases de données. Nous collecterons des données et nous les entrerons dans notre propre base.
+            2. Ensuite, nous verrons comment résoudre un problème actuel en prédisant l'avenir à l'aide de l'apprentissage automatique (aussi appelé « apprentissage artificiel » ou « apprentissage-machine »).
+            3. Finalement, nous résoudrons un problème qui nous tient à coeur personnellement.
+
+            <img width="40%" src="framework/img/workshop/hilary-shocked.gif" alt="Hilary Clinton surprise">
+          </script>
+        </section>
+            <section class="slide title" data-markdown>
+              <script type="text/template">
+                # Qu'est-ce que l'IA?                
+              </script>
+            </section>
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+      # Qu'est-ce que l'IA?
+
+      L'intelligence artificielle (IA, ou AI en anglais) est une branche de l'informatique qui consiste à créer des machines qui fonctionnent et réagissent comme des humains. 
+      
+       <img width="50%" src="framework/img/workshop/ai-william.gif" alt="Robot avec IA">
+      </script>
+    </section>
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            # Qu'est-ce que l'IA? (suite)
+
+            Voici certaines capacités humaines qui peuvent être programmées à l'aide de l'intelligence artificielle:
+            
+            - **Vision artificielle:** donne aux ordinateurs la capacité de reconnaître des objets, des scènes et des actions dans des images.
+            - **Traitement du langage naturel:** donne aux ordinateurs la capacité de comprendre le sens d'un texte ou de générer un texte compréhensible.
+            - **Traitement de la parole:** donne à l'ordinateur la capacité de transcrire les paroles des humains ou de lire un texte à voix haute.
+
+
+            <hr>
+            ###Ressources (en anglais)
+            [Demistifying AI](http://www.theatlantic.com/sponsored/deloitte-shifts/demystifying-artificial-intelligence/257/)
+
+          </script>
+        </section>
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            # Où retrouve-t-on l'IA?
+            Même si elle semble être une technologie futuriste en apparence, l'intelligence artificielle et l'apprentissage automatique font partie des outils que nous utilisons dans la vie de tous les jours. En voici quelques exemples:
+
+            <img src="framework/img/workshop/googlemaps-logo.png" alt="google-maps" width="150" style="float:left; margin-right: 30px">
+            **Google Maps** utilise l'IA pour mettre à jour des adresses et des noms de rue selon les images de Google Streetview. 
+            <br style="clear:both">
+            <br style="clear:both;margin-top: 50px;">
+            <img src="framework/img/workshop/FB-f-Logo__blue_100.png" alt="fb" width="150" style="float:left; margin-right: 30px">
+            **Facebook** utilise l'IA pour analyser les textes publiés par les utilisateurs et améliorer leurs suggestions de publicités selon leurs intérêts ou leurs besoins. De plus, l'IA sert à analyser des photos et à identifier des visages.
+            <br style="clear:both;margin-top: 50px;">
+            <br style="clear:both;margin-top: 50px;">
+            <img src="framework/img/workshop/amazon-logo_transparent.png" alt="amazon" width="150" style="float:left;  margin-right: 30px">
+            **Amazon** utilise l'IA pour son algorithme de suggestions d'achats potentiels.
+
+          </script>
+        </section>
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            # Cinq statistiques sur l'intelligence articielle qui vous couperont le souffle:
+            1. Les robots dotés d'intelligence artificielle compteront pour 85 % des interactions du service à la clientèle d'ici 2020.
+            1. Les voitures autonomes (sans conducteur) sauveront environ 300 000 vies en 10 ans grâce à leur capacité à réduire les accidents mortels sur la route.
+            1. L'IA remplacera 16 % des postes d'ici 10 ans.
+            1. Les assistants numériques vous connaîtront « personnellement » d'ici 2018.
+            1. Six milliards d'appareils font appel à l'intelligence artificielle.
+
+
+            <hr>
+            ### Ressources (en anglais)
+            - [Statistiques de Motley Crew](https://www.fool.com/investing/2016/12/10/9-artificial-intelligence-stats-that-will-blow-you.aspx)
+            - [Plus de statistiques de Motley Crew](https://www.fool.com/investing/2016/06/19/10-stats-about-artificial-intelligence-that-will-b.aspx)
+
+          </script>
+          </section>
+            <section class="slide title ai-history" data-markdown>
+              <script type="text/template">
+                # Histoire de l'IA
+              </script>
+            </section>
+        
+            <section class="slide" data-markdown data-doc>
+              <script type="text/template">
+                # Histoire de l'IA: une nouvelle révolution?
+
+                
+<div class="flex">
+<div>
+  <h2>Révolution industrielle</h2>
+  <h3>19e siècle</h3>
+  <p style="background: #b109aa; color: white"><strong style="color: white;"> Les machines s'occupent des lourdes tâches.</strong></p>
+  <p>L'équipement industriel passe du métier à tisser manuel à la machine pour égrainer le coton. </p>
+  <p>Grâce aux machines, les humains n'ont plus besoin de faire de travail manuel exigeant. </p>
+</div>
+                    
+                   
+<div>
+  <h2>Révolution numérique</h2>
+  <h3>20e siècle</h3>
+  <p style="background: #b109aa; color: white"><strong style="color: white;">Les machines s'occupent des tâches répétitives et ennuyantes.</strong></p>
+  <p>Les interfaces sont automatisées, que ce soit au kiosque à l'aéroport ou dans un centre d'appels.</p>
+  <p>Grâce à la technologie, les humains n'ont plus besoin de faire des actions répétitives et des tâches ennuyantes « de bureau ». </p>
+</div>
+                    
+<div>
+  <h2>Nouvelle révolution des machines</h2>
+  <h3>21e siècle</h3>
+  <p style="background: #b109aa; color: white"><strong style="color: white;">Les machines prennent des décisions à la place des humains.</strong></p>
+  <p>Les systèmes intelligents s'occupent de tout, du calcul des frais liés aux billets d'avion aux diagnostics de santé.</p>
+  <p>Les algorithmes prennent des décisions de qualité plus constamment et rapidement que les humains.</p>
+</div>
+</div>
+                  
+              </script>
+            </section>
+                <section class="slide" data-markdown>
+                  <script type="text/template">
+                    # Pourquoi la révolution a-t-elle lieu en ce moment? 
+
+                    L'intelligence artificielle évolue rapidement. Elle passe du laboratoire aux entreprises et aboutit dans les mains des consommateurs en un instant. Pourquoi?
+                    
+                    - <strong>Mégadonnées (Big Data)</strong>: Ces données sont interactives, mises à jour instantanément et générées automatiquement pour prendre des décisions et obtenir des réponses en temps réel.
+                    - <strong>Faible coût de l'informatique</strong>: L'infonuagique, le traitement massivement en parallèle (multiprocesseurs) et les nouvelles unités centrales (CPU) nous permettent d'utiliser des techniques d'intelligence artificielles qui n'étaient tout simplement pas assez pratiques avant.
+                    - <strong>Algorithmes améliorés</strong>: Bien que les techniques d'intelligence artificielle existent depuis des dizaines d'années, l'innovation et la performance sont à leur comble grâce à la croissance rapide de l'infrastructure informatique, des données et des capteurs.
+                  </script>
+                </section>
+            <section class="slide" data-markdown data-toc>
+              <script type="text/template">
+                # Histoire de l'IA: dates importantes
+                <table>
+                  <tr>
+                    <td><strong style="background: #b109aa; color: white;">1763</strong> Thomas Bayes établit un cadre de raisonnement pour évaluer la probabilité des événements. L'analyse bayésienne est une méthode importante dans l'apprentissage automatique.</td>
+                    <td><img src="framework/img/workshop/Thomas_Bayes.gif" alt="Thomas Bayes"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="framework/img/workshop/capek-robot.jpg" alt="Capek et robot"></td>
+                    <td><strong style="background: #b109aa; color: white;">1921</strong> L'auteur tchèque Karel Čapek utilise pour la première fois le mot « robot » dans sa pièce R.U.R. (Rossum's Universal Robots). Le mot « robot » vient du mot « robota » (travail).</td>
+                  </tr>
+                  <tr>
+                    <td><strong style="background: #b109aa; color: white;">1950</strong> Alan Turing publie le texte « Computing Machinery and Intelligence », dans lequel il propose le jeu de l'imitation, que l'on appelle aujourd'hui le « test de Turing ».</td>
+                    <td><img  src="framework/img/workshop/turing.jpg" alt="Turing"></td>
+                  </tr>
+                  <tr>
+                    <td><img  src="framework/img/workshop/wp-Marvin-Minsky-Claude-Shannon-Ray-Solomonoff-Plus-2-Dartmouth-1956-Conference.jpg" alt="Marvin et ses amis"></td>
+                    <td><strong style="background: #b109aa; color: white;">31 août 1955</strong> Le terme anglais « artificial intelligence », à l'origine du terme français « intelligence artificielle », a été utilisé pour la première fois dans une proposition de réaliser une étude sur le sujet (« 2 month, 10 man study of artificial intelligence ») qui a été soumise par John McCarthy (Collège Dartmouth), Marvin Minsky (Université Harvard), Nathaniel Rochester (IBM) et Claude Shannon (Bell Telephone Laboratories). L'atelier proposé, qui s'est déroulé un an plus tard en juillet et en août 1956, est généralement considéré comme le lieu de naissance officiel de ce nouveau domaine.</td>
+                  </tr>
+                  <tr>
+                    <td><strong style="background: #b109aa; color: white;">1961</strong> Le premier robot industriel, Unimate, commence à travailler sur une chaîne de montage de General Motors au New Jersey.</td>
+                    <td><img src="framework/img/workshop/unimate-robot.jpg" alt="Unimate Robot"></td>
+                  </tr>
+                  <tr>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/qDrDUmuUBTo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></td>
+                    <td><strong style="background: #b109aa; color: white;">1968</strong> Le film 2001, l'Odyssée de l'espace (2001: Space Odyssey) sort au cinéma. Il met en vedette Hal, un ordinateur doté de la capacité de ressentir des émotions.</td>
+                  </tr>
+                  <tr>
+                    <td><strong style="background: #b109aa; color: white;">2009</strong> Google commence à concevoir une voiture autonome dans le plus grand des secrets. En 2014, cette voiture est la première à passer un examen de conduite autonome dans l'État du Nevada.</td>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/uHbMt6WDhQ8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></td>
+                  </tr>
+                  <tr>
+                    <td><img src="framework/img/workshop/leesedolvsAl.jpg" alt="Lee Sedol contre AlphaGo"></td>
+                    <td><strong style="background: #b109aa; color: white;">Mars 2016</strong> Le programme AlphaGo de Google DeepMind bat le champion du monde de Go, Lee Sedol.</td>
+                  </tr>
+                </table>
+
+<hr>
+### Ressources (en anglais)
+- [Plus de faits historiques](https://www.forbes.com/sites/gilpress/2016/12/30/a-very-short-history-of-artificial-intelligence-ai/#22672d226fba)
+
+              </script>
+            </section>
+
+                <section class="slide women-in-ai" data-toc data-markdown>
+                
+                  <script type="text/template">
+                  # Histoire de l'IA: des femmes marquantes
+
+                  Bien que l'intelligence artificielle soit un domaine où les hommes sont majoritaires, les femmes y contribuent également. Certaines d'entre elles travaillent ici, au Canada.
+                  
+                  En 2005, quatre femmes ont organisé la première conférence pour les femmes dans le domaine de l'apprentissage automatique portant le nom de Women in Machine Learning Conference (WiML). Cette conférence existe depuis plus de dix ans et plus de 1 000 femmes du domaine font partie de l'annuaire de l'WiML. 
+
+                  ![Les femmes dans le domaine de l'apprentissage automatique à l'échelle mondiale](framework/img/workshop/women-in-machine-learning.png)
+
+  
+                  ## Voici quelques-unes des femmes brillantes oeuvrant dans le domaine de l'apprentissage automatique et de l'intelligence artificielle que ce soit au Canada ou à l'échelle mondiale: 
+                  
+                  ![Nancy Reid](framework/img/workshop/nancy-reid.jpg)
+                  La docteure Nancy Reid est professeure de sciences statistiques à l'Université de Toronto. Elle est officier de l'ordre du Canada et directrice de l'Institut canadien des sciences statistiques. Elle fait des recherches sur l'inférence statistique en mettant l'accent sur des méthodes fondées sur la plausibilité et les méthodes asymptotiques d'ordre élevé.
+
+                  ![Kathryn Hume](framework/img/workshop/kathryn-hume.jpg)
+                  La docteure Kathryn Hume est chef de la gestion et du marketing de produits pour Integrate.ai, une jeune entreprise aidant les grandes entreprises à réinventer l'engagement client en intégrant de nouvelles technologies faisant appel à l'intelligence artificielle.
+
+                  ![Bonolo Mathibela](framework/img/workshop/bonolo-Mathibela.jpg)
+                  La docteure Bonolo Mathibela est une scientifique dans le domaine de l'apprentissage automatique pour IBM Research Africa, où elle crée de des modèles d'apprentissage automatique qui améliorent la circulation routière de manière autonome.
+
+                  ![Kiri Wagstaff](framework/img/workshop/kiri-wagstaff.jpg)
+                  La docteure Kiri Wagstaff est chercheure principale en apprentissage automatique et responsable de la liaison montante tactique pour l'astromobile Opportunity (de la mission Mars Exploration Rovers) au centre Jet Propulsion Laboratory de la NASA. Elle développe des méthodes d'apprentissage automatique pour des véhicules spatiaux et des appareils dans l'espace.
+
+                  
+
+                 
+
+<hr>
+###Ressources (en anglais)
+
+[Plus de biographies](http://wimlworkshop.org/directory-of-women-in-machine-learning/),
+[Encore plus de biographies](https://www.forbes.com/sites/mariyayao/2017/05/18/meet-20-incredible-women-advancing-a-i-research/#7bb6e3e726f9),
+[Quam Proxime, le blog très éclairant de Kathryn Hume sur l'IA](https://quamproxime.com/)
+                  </script>
+          
+                </section>
+  <section class="slide title why-care" data-markdown>
+    <script type="text/template">
+      # En quoi cela nous concerne-t-il? 
+    </script>
+  </section>
+  <section class="slide" data-markdown>
+    <script type="text/template">
+    # En quoi cela nous concerne-t-il?
+
+      ## 1. Sans la participation des femmes et des personnes issues de groupes sous-représentés dans sa création, l'intelligence artificielle peut avoir des conséquences désastreuses:
+
+      - Quand le programme Siri a fait son apparition sur le iPhone, il n'était pas capable de comprendre la voix des femmes, car l'IA n'avait été exposée qu'à des voix d'hommes pendant son développement.
+      - Une analyse a prouvé que le système d'intelligence artificielle de Northpointe aux États-Unis, conçu pour prédire si un présumé agresseur a des chances de récidiver, générait des prédictions selon des préjugés raciaux.
+    </script>
+  </section>
+  <section class="slide" data-markdown>
+    <script type="text/template">
+      # En quoi cela nous concerne-t-il?
+
+      ## 2. Nous avons besoin de résoudre les problèmes de tout le monde, pas seulement de ceux qui parlent le plus fort.
+
+      Il est important que nous soyons tous bien représentés dans les ensembles de données et les algorithmes utilisés par l'intelligence artificielle afin que les machines conçues pour aider l'humanité nous aident personnellement.
+    </script>
+  </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # En quoi cela nous concerne-t-il? 
+
+
+        ## 3. Les femmes ont plus à perdre dans une société automatisée. 
+        
+        Selon le Forum économique mondial, « deux fois plus de femmes que d'hommes seront susceptibles de perdre leur emploi en raison de l'automatisation du travail ». Cela s'explique par le fait que la plupart des emplois à fort risque d'automatisation sont occupés par des femmes (p. ex. : caissière).
+
+        <img class="medium-image" src="framework/img/workshop/cashier.jpg" alt="Caissière">
+      </script>
+    </section>
+<section class="slide" data-toc data-markdown>
+<script type="text/template">
+# En quoi cela nous concerne-t-il? 
+
+## 4. Parce qu'elle peut rendre notre vie plus agréable!
+
+Pensez à toutes les formidables applications qui nous permettent déjà de profiter de la vie grâce aux données et à l'intelligence artificielle.
+
+1. Robots de chat: 
+<iframe src="https://player.vimeo.com/video/162458358" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+2. Données sur la circulation routière: Waze
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PPpZNzXqId0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+</script></section>
+
+                          <section class="slide" data-markdown>
+                            <script type="text/template">
+                            # En quoi cela nous concerne-t-il?
+                              ## 5. Parce que l'intelligence artificielle nous permet de changer le monde!
+                              
+                              L'intelligence artificielle est un domaine fascinant qui nous permet de faire des découvertes pour résoudre des problèmes. Alors, pourquoi ne pas y participer nous aussi?
+
+                              ![données cachées](framework/img/workshop/hidden-figures-gif.gif)
+                              <hr>
+                              ### Ressources (en anglais)
+                              - [Why Women Are Twice As Likely As Men To Lose Their Jobs to Robots](https://www.weforum.org/agenda/2017/07/why-women-are-twice-as-likely-as-men-to-lose-their-job-to-robots)
+                              - [Why we need diversity before ai takes over](http://www.lightreading.com/artificial-intelligence-machine-learning/why-we-need-diversity-before-ai-takes-over/a/d-id/729871)
+                              - [Women vs the machine](http://foreignpolicy.com/2017/01/16/women-vs-the-machine/)
+                              - [https://www.partnershiponai.org/#s-goals](https://www.partnershiponai.org/#s-goals)
+                              - [An important group of women is changing things](https://www.fastcompany.com/3062932/mind-and-machine/ai-is-a-male-dominated-field-but-an-important-group-of-women-is-changing-th)
+
+                            </script>
+                          </section>
+                        <section class="slide title data-everything" data-markdown>
+                          <script type="text/template">
+                            # Les données
+                            ##Données = tout.
+                          </script>
+                        </section>
+                    <section class="slide" data-markdown data-toc>
+                      <script type="text/template">
+                      # Que sont les données?
+
+                        Les données sont *tout*. Plus précisément, elles sont des informations.
+
+                        - En tant qu'humains, nous interprétons des données dès notre naissance. Au moment où nous commençons à percevoir le monde, nous collectons et traitons des données.
+                        - De plus, nous collectons constamment des données à propos de nos actions et de nos interactions avec les autres.
+                        - Pouvez-vous penser à des exemples d'endroits et d'objets collectant des données sur nous régulièrement?
+                          - Magasins?
+                          - Gouvernement?
+                          - Sites Web?
+                          - Satellites?
+
+                      </script>
+                    </section>
+        <section class="slide" data-toc data-markdown>
+          <script type="text/template">
+            # Qu'est-ce qu'une base de données? 
+            Une base de données est un endroit où des données sont enregistrées et organisées. En voici quelques exemples que vous connaissez peut-être déjà:
+
+            1. <img src="framework/img/workshop/rolodex-animated.gif" width="50%" style="float: right;" alt="rolodex"> Carnet d'adresses (Rolodex). Ils servaient à organiser des adresses quand les téléphones portables n'existaient pas.
+
+            
+
+            <img width="50%" style="margin-right: 10px;clear: right; float: left;" src="framework/img/workshop/sample-db.png" alt="data table"><p style="margin-left: 20px;clear: right;">2. Feuilles de calcul. Vous en avez sûrement déjà vues dans Microsoft Excel, Google Feuilles de calcul ou Numbers.</p>
+
+            
+
+            
+
+          </script>
+        </section>
+            <section class="slide" data-markdown>
+              <script type="text/template">
+                # Données structurées et non structurées
+
+                Quand nous pensons à des bases de données, nous pensons en fait à des données structurées, c'est-à-dire, des données bien organisées et consultables à l'aide d'un algorithme informatique.
+
+                En revanche, les données non structurées sont comme un fouillis difficile à organiser précisément. 
+
+                Par exemple, une **galerie de photos**. Il est possible de cataloguer nos photos selon des données avancées comme les géomarques, les marques temporelles, voire la reconnaissance faciale, mais il est difficile pour un ordinateur de bien comprendre ce que représente vraiment une photo.
+
+              </script>
+            </section>
+        <section class="slide" data-toc data-markdown>
+          <script type="text/template">
+            #Exercice n° 1: notre première base de données (20 minutes)
+
+            1. Formez une équipe de quatre avec les apprenantes autour de vous.
+            1. Parmi les membres de l'équipe, désignez une spécialiste de l'entrée des données qui entrera les informations de tous les membres dans la base.
+            1. Consultez la feuille de calcul de données d'apprenantes:  la version française dans le fichier zip (LLC Feuille de calcul - apprenants) ou la version anglaise au http://bit.ly/llc-ai-dataset.
+            1. Chaque membre de l'équipe doit dévoiler ses préférences à la spécialiste, qui les entrera dans la feuille de calcul. Par contre, les réponses de chaque membre doivent figurer exclusivement dans les options ci-dessous:
+              - Tranche d'âge: 18-29, 30-40, 40-50, 50+
+              - Nombre d'heures devant la télé par semaine
+              - Nombre d'heures sur les réseaux sociaux par semaine
+              - La latitude de la ville où vous vous trouvez (Truc: si la latitude est N (au Nord de l'équateur), le nombre reste tel quel. Si la latitude est S (au Sud de l'équateur), il faut ajouter un - devant le nombre. Les lettres et les symboles non numériques sont interdits dans cette colonne.)
+              - La longitude de la ville ou vous vous trouvez (Truc: si la latitude est E (à l'Est du premier méridien), le nombre reste tel quel. Si la longitude est W ou O (à l'Ouest du premier méridien), il faut ajouter un - devant le nombre. Les lettres et les symboles non numériques sont interdits dans cette colonne.)
+              - Couleur préférée
+              - Protéine préférée: poisson, boeuf, poulet, porc, végétarien/végétalien
+              - Genre de films préféré: comédie, horreur, comédie romantique, drame, action, documentaire
+              - Genre de musique préféré: rock, rap, hip hop, punk, classique, indie, pop, jazz, monde, latin
+              - Animal préféré: chat, chien, poisson, autre
+              
+              La feuille de calcul ressemblera à ça: 
+
+              ![starter db](framework/img/workshop/spreadsheet_fr.png)
+          </script>
+        </section>
+            <section class="slide" data-markdown>
+              <script type="text/template">
+              #Fichiers de bases de données
+
+                Les bases de données sont enregistrées sous divers formats.
+
+                Aujourd'hui, nous utiliserons des ensembles de données sous format **CSV** (nomdufichier.csv) . CSV veut dire *Comma Separated Values* (valeurs délimitées par des virgules) parce que les rangées de données sont enregistrées individuellement et séparées par des virgules.
+
+                Les fichiers CSV sont très utiles, car ils nous permettent de transférer facilement des données d'un logiciel à un autre. 
+
+                Jusqu'à maintenant, nous utilisions des feuilles de calcul, mais nous commencerons à consulter nos données à l'aide de logiciels d'analyse de données. Le format CSV est compatible avec la plupart des logiciels du genre.
+
+                Comparons: 
+
+                1. Les données dans notre tableau: 
+                ![starter db](framework/img/workshop/spreadsheet_fr.png)
+
+                2. Les données dans un fichier .csv: 
+                ```CSV
+                Tranche d`âge,Heures de télé par semaine,Heures sur les réseaux sociaux par semaine,Longitude,Latitude,Couleur préférée,Protéine préférée,Genre de films préféré,Genre de musique préféré,Animal préféré
+                30-40,5,2,Rouge,Poisson,Film d`amour,Indie,Chat
+                ```
+
+
+
+
+              </script>
+            </section>
+    
+      <section class="slide" data-markdown>
+        <script type="text/template">
+          # Exercice de groupe: créer un fichier .csv
+
+          Créons notre premier fichier .csv à partir d'un ensemble de données pour mieux comprendre ce type de fichier.
+
+          Sur Google Feuilles de calcul (feuille de calcul en anglais):
+
+          1. Ouvrez la feuille de calcul ici: [http://bit.ly/llc-ai-dataset](http://bit.ly/llc-ai-dataset). Ne touchez pas aux données du fichier.
+          1. Allez dans Fichier > Télécharger au format > Valeurs séparées par des virgules
+          1. Quand le fichier aura fini d'être téléchargé, mettez-le dans le dossier des fichiers des apprenants pour l'atelier.
+
+          Démarche pour Microsoft Excel (feuille de calcul en français): 
+
+          1. Ouvrez la feuille de calcul du dossier zip (LLC Feuille de calcul - apprenants).
+          2. Allez dans Fichier > Enregistrer sous et cliquez sur Ce PC. 
+          3. Sélectionnez le format d'enregistrement CSV UTF-8 (délimité par des virgules).
+
+        </script>
+            
+      </section>
+      <section class="slide title" data-markdown>
+              <script type="text/template">
+                # DATAIKU
+                ##Studio de sciences des données
+              </script>
+            </section>
+          <section class="slide" data-markdown>
+            <script type="text/template">
+              #Dataiku
+
+              Aujourd'hui, nous utiliserons Dataiku pour visualiser et analyser nos ensembles de données. Dataiku est une plate-forme qui, d'abord, nous permettra d'analyser des données. Ensuite, nous pourrons appliquer aux ensembles des algorithmes d'apprentissage automatique à l'aide d'une interface utilisateur graphique (GUI) conviviale. Il est aussi possible de regarder le code derrière l'interface afin de le modifier. À noter que ce logiciel est seulement offert en anglais.
+            </script>
+          </section>
+          <section class="slide" data-markdown>
+              <script type="text/template">
+                # Option en ligne
+
+                Allez sur la page Get Started à l'adresse [dataiku.com](http://dataiku.com) et cliquez sur le bouton « Request trial » pour avoir une version d'essai de 14 jours. Cette version du logiciel est accessible à partie de votre navigateur Chrome ou Firefox sans problème, tant et aussi longtemps que vous êtes branchée à Internet. 
+                
+                ![request trial](framework/img/workshop/request-trial.png)
+
+                Créez un compte et vérifiez vos courriels pour voir le courriel de confirmation d'ici 5 à 10 minutes. Prenez une pause en attendant!
+
+                Si vous n'avez pas accès à Internet, passez à la diapositive suivante.
+
+              </script>
+            </section>
+
+              <section class="slide" data-toc data-markdown>
+                <script type="text/template">
+                  # Option hors ligne pour Mac: installer Dataiku sur un ordinateur Apple (15 minutes)
+
+                  1. Attendez que le formateur/mentor vous donne la clé USB avec des versions hors ligne de Dataiku et tous les logiciels nécessaires.
+                  1. Ouvrez le fichier DMG et faites glisser l'application dans le dossier Applications.
+                  1. Ouvrez l'application en la cherchant avec Spotlight ou en cliquant sur son icône dans le dossier Applications. 
+                  1. Il est possible que vous deviez autoriser l'exécution de Dataiku sur votre système d'exploitation. Si c'est le cas, allez dans Préférences système, Sécurité et confidentialité et autorisez l'application.
+                  DSS s'ouvre automatiquement dans votre navigateur (Chrome et Firefox seulement). Pour réouvrir DSS, cliquez sur le logo de DSS dans la barre de menus, sinon, ouvrez le navigateur et allez à l'adresse [http://localhost:11200](localhost:11200)
+                  1. Dataiku exige que vous vous inscriviez la première fois que vous chargez l'application. L'inscription est gratuite et ne prend que 5 à 10 minutes, le temps d'attendre le courriel de confirmation. Profitez-en pour prendre une petite pause!
+
+                </script>
+              </section>
+        <section class="slide" data-toc data-markdown>
+          <script type="text/template">
+            # Option hors ligne pour Windows: installer Dataiku sur un ordinateur avec Windows (15 minutes)
+
+            ## Sur les ordinateurs avec Windows, nous utiliserons le logiciel Virtual Box, car Dataiku ne fonctionne localement que sur les plate-formes Mac et Linux. Attendez que le formateur/mentor vous donne la clé USB avec tous les logiciels nécessaires.
+            1. Déplacez les fichiers du dossier d'installation Windows vers votre ordinateur.
+            1. Exécutez le fichier .exe à l'intérieur du dossier afin d'installer Virtual Box.
+            1. Importez la machine virtuelle Data Science Studio dans Virtual Box, soit en double-cliquant ou en allant dans Fichier > Importer un appareil virtuel.
+            1. La fenêtre d'importation d'un appareil virtuel s'ouvre. Vous n'avez aucun paramètre à changer et il ne reste qu'à cliquer sur l'icône de dossier et à sélectionner le fichier de la machine. 
+            1. Quand la machine virtuelle est importée, cliquez sur Démarrer pour qu'elle s'exécute.
+            1. Quand la machine virtuelle aura terminé de se charger, vous verrez une bannière de bienvenue avec des informations de connexion.
+            1. Vous ne vous connecterez pas dans la machine virtuelle, mais dans votre navigateur Chrome ou Firefox (pas dans la machine virtuelle). Dans le navigateur, entrez l'adresse URL affichée sur la bannière de l'interface de Data Science Studio. L'interface de DSS s'affichera. L'URL à entrer est souvent http://127.0.0.1:10000 (mais ce n'est pas toujours le cas, pour en être sûre, vérifiez celle sur la bannière).
+            1. Dataiku exige que vous vous inscriviez la première fois que vous chargez l'application. L'inscription est gratuite et ne prend que 5 à 10 minutes, le temps d'attendre le courriel de confirmation. Profitez-en pour prendre une petite pause!
+
+
+          </script>
+        </section>
+            <section class="slide title" data-markdown style="background: url(framework/img/workshop/coffeebreak.gif") center 100% no-repeat;>
+              <script type="text/template">
+                # Pause pour l'installation
+              </script>
+            </section>
+    
+       <section class="slide" data-toc data-markdown>
+         <script type="text/template">
+           # Que met-on dans une base de données?
+
+           Quelles informations ajoute-t-on à une base de données? Si ces informations peuvent être littéralement TOUT, comment pouvons-nous les enregistrer de façon à ce que l'ordinateur les comprenne? 
+           
+           Il y a des **types** de données bien établis que nous pouvons définir dans une base de données. Par exemple:
+
+            - Entier (int (de « integer » en anglais, nombres entiers)
+            - Flotteur (float (de « float » en anglais, des nombres avec des décimales)
+            - Chaîne (str (de « string » en anglais), des mots, ses phrases, du texte litéral)
+            - Expression booléenne (True (vrai) et False (faux))
+            - Octet (« byte » en anglais, et les tableaux (« arrays ») d'octets, p. ex. image .jpeg))
+
+         </script>
+       </section>
+      <section class="slide" data-toc data-markdown>
+        <script type="text/template">
+          # Types de données
+          ## Entiers (Int)
+          Ce sont des nombres entiers (sans décimales). p. ex.: Nombre de gens qui sont venus à ta fête = 35.
+          ## Flotteurs (float)
+          Ce sont des nombres avec des décimales. p. ex. : Le record d'Usain Bolt au 100 mètres: 9,58 secondes.
+          ## Chaîne (str)
+          Les chaînes sont des mots, des phrases ou du texte. p. ex.: Ta couleur préférée: « Rouge »
+          ## Expression booléenne
+          True (vrai) et False (faux). p. ex. Vas-tu au mariage de ton ami? Oui(Vrai)
+          ## Octets et tableaux d'octets (« bytes » et « byte arrays »)
+          Ce type de données est utilisé pour les images, comme les fichiers .jpeg.
+
+        </script>
+      </section>
+          <section class="slide" data-toc data-markdown>
+            <script type="text/template">
+              # Exercice de groupe: notre premier projet avec Dataiku
+
+              Maintenant que nous avons créé notre compte Dataiku, importons notre fichier .csv dans notre premier projet.
+
+              1. Si vous avez la version en ligne, vous n'avez qu'à retourner sur le site Web de Dataiku. Si vous avez une version hors ligne, accédez à Dataiku en passant par votre navigateur (en entrant l'adresse http://localhost:11200 sur un Mac, et probablement  http://127.0.0.1:10000 sur la machine virtuelle de Windows)
+              1. Cliquez sur le symbole + en haut à gauche de l'écran pour créer un nouveau projet:
+
+                ![new project](framework/img/workshop/new-project-plus.png)
+
+              1. Donnez un nom à votre projet, par exemple, « Mon premier projet ».
+
+
+              ![nom du projet](framework/img/workshop/new_project_name.png)
+
+              1. Importez votre premier ensemble de données, c'est-à-dire le fichier .csv en cliquant sur « Import your first dataset ». 
+
+              ![bouton import](framework/img/workshop/import-first-dataset.png)
+
+              1. Sous « Files », cliquez sur « Upload your files ». Cliquez sur « Add a file » et sélectionnez le fichier CSV sur votre ordinateur. Vous pourrez en voir un aperçu si vous le souhaitez.
+
+              1. Changez le nom de l'ensemble si vous le souhaitez et cliquez sur « Create » pour terminer l'importation.
+              
+                ![create](framework/img/workshop/create-dataset.png)
+              
+              Voici une animation démontrant comment importer son ensemble de données:
+
+               
+              ![importer l'ensemble de données](framework/img/workshop/import_dataset.gif)
+
+            </script>
+          </section>
+              <section class="slide" data-toc data-markdown>
+                <script type="text/template">
+                  # Exercice n° 3: Explorer les données (15 minutes)
+
+                  Maintenant, c'est le temps de jeter un coup d'oeil aux données! 
+
+                  1. Dès que vous aurez cliqué sur « Create », vous serez redirigée vers le tableau de données avec le menu d'exploration en haut. Si ce n'est pas le cas, cliquez sur l'icône « Data sets » sur le tableau de bord (« Dashboard »).
+                  1. L'ensemble de données devrait être visible et consultable à l'aide du menu d'exploration en haut. 
+                  1. Dans le menu, cliquez sur « Explore » ![data dashboard menu](framework/img/workshop/explore-menu.png)
+                  1. Dans l'onglet « Explore », vos données s'afficheront sous forme de tableau. Dans la rangée du haut, vous verrez que chaque colonne est d'abord reconnue comme étant une chaîne. La raison est la suivante: toutes les valeurs du fichier .csv sont enregistrées comme des chaînes. Sous la chaîne, vous verrez le vrai type de données reconnu par Dataiku pour chaque colonne. Les types indiqués sont-ils tous corrects? Vérifiez-les avec la liste des différents types de données de tout à l'heure.
+                  1. Créez un graphique! Dans l'onglet « Charts », vous pourrez jouer avec la visualisation des données sous forme de graphique. Le graphique par défaut est un histogramme, mais vous pouvez changer le type de graphique selon vos goûts en cliquant sur la flèche du menu déroulant sur l'icône de graphique. ![graph-dropdown](framework/img/workshop/graph-type-dropdown.png)
+                  1. Vous remarquerez que certains champs du graphique ne peuvent être remplis que par des colonnes numériques. Par exemple, la colonne Y de votre graphique à barre doit comprendre des données numériques pour s'afficher correctement. Changez les colonnes et l'aspect du graphique pour voir s'il y a une corrélation entre les données. Amusez-vous!
+                  ![show by](framework/img/workshop/X-Y-VALUES.png)
+                  1. Facultatif: expérimentez avec des cartes géographiques pour vos colonnes de longitude et de latitude! Essayez de voir s'il est possible d'afficher les couleurs préférées selon l'emplacement de chacun! 
+
+                </script>
+              </section>
+                  <section class="slide" data-markdown>
+                    <script type="text/template">
+                      # Utilisons les données pour résoudre des problèmes!
+
+                      Maintenant que nous avons exploré une base de données simple, passons à de vraies données.
+
+                      **Problème:** Le service des ressources humaines d'IBM veut réduire le nombre d'employés quittant l'entreprise (un phénomène que l'on appelle « l'attrition »).
+
+                      **Solution:** Dans un monde idéal, le service des ressources humaines souhaiterait prédire qui sont les employés les plus susceptibles de quitter l'entreprise afin de trouver des moyens de les encourager à rester.
+
+                      Savez-vous comment nous intégrerons cela dans la solution? À l'aide de l'apprentissage automatique. 
+                      
+                      <img src="framework/img/workshop/willis.gif" alt="Willis">
+
+                      « de kessé? »
+                    </script>
+                  </section>
+                  
+                  <section class="slide title" data-markdown>
+                          <script type="text/template">
+                            # L'apprentissage automatique
+                          </script>
+                        </section>
+                      <section class="slide" data-toc data-markdown>
+                        <script type="text/template">
+                        #Qu'est-ce que l'apprentissage automatique? 
+
+                        L'apprentissage automatique, aussi appelé « apprentissage-machine », consiste à entrer des données dans un programme spécial en précisant un but à atteindre. La machine développera son propre algorithme afin d'atteindre ce but. (Will Knight, 20 juillet 2017)
+                        
+                        Par exemple, grâce à une base de données contenant les détails des transactions sur une carte de crédit, y compris la date de la transaction, le magasin, l'emplacement du magasin et le prix, la machine a des informations pour prédire si une transaction est valide ou s'il s'agit d'une fraude.
+
+                        - Habituellement, nous entrons les données dans un ordinateur, puis l'algorithme les traite et nous donne un **résultat**.
+                        - Toutefois, avec l'apprentissage automatique, nous faisons le contraire. Nous entrons les données et le résultat, et l'ordinateur (un « apprenant ») nous donne un **modèle** pour traiter les données et obtenir un résultat.
+                        - Les « apprenants » sont des algorithmes qui créent des **modèles** contenant des **règles de décision et d'action**.
+                        - Ils apprennent des connaissances et des processus qui se trouvent **derrière la compétence** (le résultat).
+
+                        <hr>
+                        ### Ressources (en anglais)
+                        [AI Fight Club Could Help Save Us from a Future of Super-Smart Cyberattacks](https://www.technologyreview.com/s/608288/ai-fight-club-could-help-save-us-from-a-future-of-super-smart-cyberattacks/)
+                        
+                        </script>
+                      </section>
+     
+                      <section class="slide" data-markdown>
+                        <script type="text/template">
+                          # L'apprentissage automatique est au coeur de l'IA
+
+                          <img src="framework/img/workshop/ai-ml-dl-01_fr.svg" alt="AI, ML, DL" width="50%" style="display: block; margin: 0 auto;">
+                        </script>
+                      </section>
+                          <section class="slide" data-markdown>
+                            <script type="text/template">
+                              # Terminologie de l'apprentissage automatique (AA)
+                              **Prédictions:** sortie de modèle prédisant le résultat en trouvant des formes constantes dans les données.
+
+                              **Modèle:**  fonction mathématique, c'est-à-dire, une relation entre un ensemble de données (entrées) et un ensemble de sorties. p. ex.:
+
+                              `f(x) = x²`
+
+                              Ces fonctions, que l'on appelle « modèles », peuvent être utilisées pour faire des prédictions, par exemple, pour prédire quel employé d'IBM est le plus susceptible de quitter son emploi prochainement.
+                              
+                              **Méthode/algorithme d'apprentissage:** optimisation.
+
+
+                            </script>
+                          </section>
+                              <section class="slide" data-toc data-markdown>
+                                <script type="text/template">
+                                  # Les techniques d'apprentissage
+
+                                  - **Supervisé**: apprendre des règles faisant correspondre des entrées avec des sorties souhaitées.
+                                  - **Non supervisé**: apprendre à regrouper et à étiqueter des entrées semblables.
+                                  - **Profond**: apprendre grâce à une hiérarchie de concepts simples et complexes.
+                                  - **Renforcé**: apprendre en interagissant constamment avec l'environnement.
+
+                                  <img width="50%;" src="framework/img/workshop/urkel.gif" alt="Urkel">
+                                </script>
+                              </section>
+                                  <section class="slide" data-markdown>
+                                    <script type="text/template">
+                                      # Supervisé
+
+                                      
+                                      <img  width="60%" src="framework/img/workshop/supervised-learning_fr.svg"  alt="apprentissage supervisé ellen selfie">
+
+                                      L'apprentissage supervisé consiste à fournir des données (entrées) à un ordinateur et en précisant le résultat (sortie) souhaité avec les données. L'ordinateur trouve une corrélation entre les données et le résultat afin de prédire les résultats avec de nouvelles données sans que l'utilisateur n'ait à entrer des résultats pour celles-ci.
+
+                                      Par exemple: 
+
+                                      1. Nous donnons à un ordinateur un ensemble de données à propos d'un grand nombre de patients. 
+                                      2. Ensuite, nous indiquons à l'ordinateur quels sont les patients atteints de cancer et ceux qui n'en sont pas atteints.
+                                      3. L'ordinateur trouvera une corrélation entre les données des patients et leur état de santé, s'ils sont atteints de cancer ou pas (ceci est le modèle). 
+                                      4. Finalement, il utilisera le modèle, qui n'est qu'une fonction mathématique, pour prédire quels sont les patients atteints de cancer à partir des nouveaux ensembles de données et ce, sans que nous lui ayons fourni les résultats.
+                                      
+                                      Le **but** est de minimiser les différences (erreurs) entre les prédictions du modèle et les vrais résultats.
+
+                                      Dans un **monde idéal**, nous voulons minimiser les erreurs dans tous les résultats.
+
+                                      Dans la **vraie vie**, nous n'avons pas assez de données (entrées) avec des résultats correspondants (sorties) pour que l'ordinateur puisse bien apprendre.
+          
+
+                                    </script>
+                                  </section>
+
+                                  
+  <section class="slide" data-markdown>
+    <script type="text/template">
+      # Apprentissage profond
+      
+      <img class="medium-image" src="framework/img/workshop/puppy.jpg" alt="chiot">
+      <img class="medium-image" src="framework/img/workshop/kitten.jpg" alt="chaton">
+
+      Imaginez que nous donnions des millions d'images de chatons et de chiots à un ordinateur. Quelles sont les caractéristiques à enseigner à l'ordinateur afin qu'il puisse différencer les chatons et les chiots sans que l'on lui indique la réponse? Il s'agit d'une chose très difficile à faire avec des images, et c'est là que **l'apprentissage profond** peut nous aider.
+
+      <img src="framework/img/workshop/deeplearning.png" alt="chaton">
+
+      - Les réseaux de neurones profonds sont un sous-type de l'apprentissage supervisé. 
+      - Les réseaux profonds sont des réseaux à couches multiples superposées les unes sur les autres. Chaque couche est un nouveau niveau d'abstration.
+      - Il y a deux raisons derrière la popularité et la grande portée des réseaux de neurones profonds dans des domaines comme la vision artificielle et la reconnaissance vocale:
+        - L'émergence d'une architecture d'ordinateur parallèle moderne à faible coût permet de calculer un grand nombre de paramètres rapidement dans les réseaux de neurones.
+        - La disponibilité d'un nombre infini d'images, de vidéos, d'enregistrements de la parole et de textes sur Internet offre un ensemble de données parfait pour entraîner les réseaux de neurones profonds.
+      - Chaque couche de l'architecture profonde offre un traitement de l'information non linéaire.
+      - La sortie est une fonction paramétrée des données: la sortie d'une couche est l'entrée de la couche du dessus.
+    </script>
+  </section>
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            # Apprentissage non supervisé
+
+            <img src="framework/img/workshop/clustering-01_fr.svg" alt="IA, AA, AP" width="80%" style="display: block;">
+              L'apprentissage non supervisé consiste à donner à l'ordinateur des données non étiquetées (une entrée sans sortie correspondante (résultat).
+
+              **Comme un pirate perdu dans une botte de foin:** Imaginez que nous voulions qu'un ordinateur puisse reconnaître quels utilisateurs sont des pirates sur Internet. Il est très probable que nous n'aurions pas assez de données pour réaliser un apprentissage supervisé. C'est pourquoi nous ferions un apprentissage non supervisé, où l'ordinateur ferait des regroupements (« segments ») de pirates potentiels, des utilisateurs dont les activités sur Internet sont différentes de la plupart des gens.
+
+
+              **Segment:** groupe de données rassemblées selon leur similarité.
+
+
+          </script>
+        </section>
+            <section class="slide" data-markdown>
+              <script type="text/template">
+              # Apprentissage par renforcement
+                <img src="framework/img/workshop/reinforced-learning-01_fr.svg" alt="AI, ML, DL" width="50%">
+
+                - **Entraînement:** L'agent interagit avec l'environnement et reçoit des signaux numériques comme récompense.
+                - **Apprentissage:** La meilleure action selon chaque état de l'environnement. Le comportement maximisant le plus la récompense à long terme.
+                - **Difficultés:** Comment concevoir le domaine du problème: la représentation de l'état, le choix de l'action, le signal indiquant le coût et la récompense.
+                - **Exemples:** Alpha Go, voitures autonomes.
+
+              </script>
+            </section>
+                <section class="slide" data-toc data-markdown>
+                  <script type="text/template">
+                    # Démarche des scientifiques des données
+
+                    ![démarche des scientifiques](framework/img/workshop/data-science-flow_fr.png)
+                  </script>
+                </section>
+
+            <section class="slide" data-markdown>
+              <script type="text/template">
+                # La collecte de données
+                L'une des étapes les plus importantes de la résolution de problème avec l'apprentissage automatique consiste à collecter et à préparer l'ENTRÉE et la SORTIE.
+
+                Dans l'apprentissage automatique supervisé, le modèle apprend en fonction des instances de données étiquetées que nous lui avons données. Le modèle entraîné peut être utilisé pour prédire la sortie de données dont nous ne connaissons pas le résultat ou la réponse (la sortie).
+
+                ## Chaque instance de données contient deux éléments:
+
+                - **Entrée**: L'entrée brute avec des valeurs numériques correspondant à des variables ou à des caractéristiques.
+                - **Sortie**: Ce que l'on veut que le modèle prédise. 
+
+                ## Sources de données étiquetées:
+
+                - **Données d'expérience:** données historiques tirées de processus avec des entrées et des sorties.
+                - **Annotation par l'humain:** données annotées par les humains. Les entrées sont confiées à des annotateurs humains, qui les étiqueteront.
+
+
+              </script>
+            </section>
+                <section class="slide" data-markdown>
+                  <script type="text/template">
+                    # Conception de caractéristiques
+                    
+                    Les caractéristiques sont essentiellement les colonnes de la base de données. 
+
+                    La performance des modèles d'apprentissage automatique varie grandement selon la représentation des données.
+                        
+                    Chaque élément d'information compris dans la représentation d'une entrée est que l'on appelle une « caractéristique ».
+
+                    **Exemple:** Représentation d'un patient. Le docteur examine le patient, vérifie sa pression, la température de son corps, lui fait passer un examen d'imagerie par résonance magnétique, un tomodensitogramme et un examen du sucre dans le sang, puis il donne ces informations au système d'intelligence artificielle sous forme d'entrées (caractéristiques).
+
+                  </script>
+                </section>
+
+                <section class="slide" data-markdown>
+                  <script type="text/template">
+                    # Explorer les données
+
+                    Les colonnes sont appelées des **variables d'entrées**, des **caractéristiques** ou des **attributs**.
+
+                    - La sortie (que nous essayons de prédire) s'appelle une **variable de sortie** ou une **cible**.
+                    - Une ligne dans un tableau s'appelle un **exemple d'entraînement** ou une **instance**.
+                    - Le tableau en entier est un **ensemble de données**.
+
+                  </script>
+                </section>
+
+                    <section class="slide" data-markdown>
+                      <script type="text/template">
+                        # Nettoyer, préparer et manipuler des données
+
+                        Le prétraitement et le nettoyage des données sont des tâches importantes à réaliser avant d'utiliser des données pour entraîner un modèle d'apprentissage automatique.
+
+                        À quoi servent ces étapes? Elles servent à prévenir les mauvaises entrées qui mèneneront forcément à de mauvaises sorties.
+
+                        ## Les données brutes sont...
+
+                        - Incomplètes: Des valeurs correspondant à différents attributs pourraient être absentes.
+                        - Bruyantes: Les valeurs incorrectes de certains attributs pourraient se démarquer grandement des autres.
+                        - Inconstantes.
+                        
+                        ## Étapes du prétraitement: 
+                        - **Nettoyage des données:** Entrer les données manquantes, uniformiser les données bruyantes, identifier les données qui se démarquent et corriger les inconstances.
+                        - **Intégration des données:** Utiliser de nombreuses bases de données, des cubes de données ou des fichiers.
+                        - **Transformation des données:** Normaliser et agréger.
+                        - **Réduction des données:** Réduire le volume de données tout en produisant les mêmes résultats d'analyse (ou des résultats sembables).
+                        - **Discrétisation des données:** Réduction des données et remplacer des attributs numériques par des attributs nominaux.
+
+                        <hr>
+                        ### Ressources (en anglais)
+                        http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.html, https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-data-science-prepare-data
+                      </script>
+                    </section>
+                        <section class="slide" data-markdown>
+                          <script type="text/template">
+                            # Exercice n° 4: Nettoyer les données (8 minutes)
+                            
+                            Revenons à notre problème des employés d'IBM. Nous allons arrêter l'attrition en déterminant les employés les plus susceptibles de partir.
+
+                            1. Premièrement, nous allons créer un autre projet. Cliquez sur le + en haut en gauche du tableau de bord de Dataiku et créez un nouveau projet appelé « Projet d'apprentissage automatique ».
+                            1. Trouvez l'ensemble de données nécessaire: le fichier .csv en français nommé Attrition IBM dans le dossier .zip, ou le fichier en anglais à l'adresse [http://bit.ly/llc-ai-hr-dataset](http://bit.ly/llc-ai-hr-dataset).
+                            1. Cliquez sur « Import your first dataset », puis sur « Upload your files » et sur « Add a file ».
+                            1. Sélectionnez le fichier .csv sur votre ordinateur, et cliquez sur le bouton « Create » pour finaliser l'importation.
+                            1. Assurez-vous que les noms des colonnes ont été bien importés.
+                            1. Assurez-vous que tous les types de données ont été bien identifiés. **Indice:** Il y a une erreur dans une des colonnes! Un indice: ![indice](framework/img/workshop/clue.png)
+
+    
+
+
+                          </script>
+                        </section>
+                            <section class="slide" data-markdown>
+                              <script type="text/template">
+                              # Entraîner des modèles d'apprentissage automatique
+                              ##  Un modèle d'apprentissage automatique supervisé est une fonction qui accepte une entrée et retourne une sortie.
+                                F(X)=y est une fonction dans laquelle F(X) est un « bon indicateur » de la valeur de y.
+                                Par exemple. le nombre d'années à occuper le même poste est un bon indicateur pour l'attrition (si un employé est susceptible de garder ou de quitter son poste).
+                              ## Étapes pour résoudre un problème avec l'apprentissage automatique:
+                                1. Déterminer les paires entrée-sortie.
+                                2. Encoder les entrées et les sorties.
+                                3. Choisir une classe de modèles d'apprentissage automatique et trouver le meilleur modèle en expérimentant.
+
+                                <hr>
+                                ### Ressources (en anglais)
+                                [A Non-Technical Introduction to Machine Learning](https://medium.com/safegraph/a-non-technical-introduction-to-machine-learning-b49fce202ae8) 
+
+
+                              </script>
+                            </section>
+                                <section class="slide" data-markdown>
+                                  <script type="text/template">
+                                    # Mettre à l'essai les prédictions du modèle
+
+                                    ## Comment évaluer la qualité du modèle appris?
+
+                                    - Les données se divisent en deux sous-groupes:
+                                         1. Un groupe d'entraînement et de validation seulement utilisé pour trouver le bon indicateur pour la fonction.
+                                         2. Un groupe d'essai utilisé pour signaler les erreurs de prédiction du modèle.
+                                    - Ces deux ensembles de données doivent être indépendants!
+                                    - Normalement, 70 % des données font partie du groupe d'entraînement et de validation, tandis que le reste des données appartiennent au groupe d'essai.
+                                    - Si l'ensemble de données est petit, nous faisons appel à la validation croisée.
+
+                                  </script>
+                                </section>
+          <section class="slide" data-markdown>
+            <script type="text/template">
+            # Exercice de groupe: choisir les entrées et les sorties
+              Maintenant, nous allons choisir les entrées à utiliser pour l'apprentissage et déterminer les sorties souhaitées.
+              <ol>
+                <li>
+                <p>Retournons à notre projet d'apprentissage, dans lequel nous avons déjà nettoyé notre tableau. Nous allons maintenant regarder une nouvelle section: le lab.</p>
+                <p>Sélectionnez « Prepare data and build models » dans l'option Visual Analysis.  <img src="framework/img/workshop/ml-ex/Prepare-data-an-build-models.png" alt="construire modèle"></p></li>
+                <li><p>Faites un clic droit sur la colonne contenant les données dont vous voulez vous servir pour la prédiction, en d'autres mots, la sortie. Dans ce cas-ci, nous choisirons la colonne « Attrition ». Sélectionnez « Create prediction model ».</p>
+                <img src="framework/img/workshop/ml-ex/create-prediction-model.png" alt="construire modèle">
+                </li>
+                <li>Commencez par l'option « Decision Tree », car celle-ci a le meilleur potentiel de prévision.</li>
+                <li>Cliquez sur le bouton vert « Train ». <img src="framework/img/workshop/ml-ex/lab-step-one.gif" alt="1-4"></li>
+                
+              </ol>
+              
+
+              
+
+            </script>
+          </section>
+
+              <section class="slide" data-markdown>
+                <script type="text/template">
+                  #Exercice de groupe (suite): évaluation des entrées
+
+                  1. Vous voyez actuellement les résultats de votre modèle.
+                    - Les entrées les plus déterminantes en matière d'attrition sont les suivantes: 
+                  <img src="framework/img/workshop/most-important-variables.png" alt="graphique des variables les plus importamtes" class="medium-image">
+                    - <img src="framework/img/workshop/training-test-sets.png" alt="données d'essai et données d'entraînement" width="30%" style="display:block; float: right;"> Ici, vous verrez comment les données ont été réparties, soit dans l'ensemble de données d'entraînement ou dans l'ensemble de données d'essai. N'oubliez pas que les données d'entraînement sont fournies à l'ordinateur avec une sortie correspondante (la colonne « Attrition »), tandis que les données d'essai n'ont pas de sorties correspondantes et servent à essayer le modèle et voir s'il peut bien prédire l'attrition.
+                  2. Maintenant, cliquons sur le modèle pour le regarder de plus près!
+                
+
+                </script>
+              </section>
+              <section class="slide" data-markdown>
+                <script type="text/template">
+                  # Exercice de groupe (sortie): évaluation du modèle
+                  1. <img style="display:block; width: 50%; float: right;" src="framework/img/workshop/decision-tree.png" alt="decision tree"> À l'intérieur du modèle, nous voyons un rapport détaillé des prédictions de la machine. Premièrement, sous le menu « Interpretation », jetez un coup d'oeil au « Decision Tree ». L'arbre nous permet de voir comment la machine a pris ses décisions.
+
+                  2. <img style="display:block; margin-right: 10px; width: 70%; float: left;" src="framework/img/workshop/variables-bars.png" alt="decision tree">Dans le graphique à barres **Variables Importance**, vous verrez de manière détaillée l'importance de chaque colonne pour prédire l'attrition.
+                  
+                  3. Si vous cliquez sur **Features** sous « Model Information », vous verrez quelles colonnes ont servi d'entrée et lesquelles n'ont pas servi, car elles étaient inutiles.
+
+                  <img style="display:block;" src="framework/img/workshop/rejected-input.png" alt="decision tree">
+
+                  Y a-t-il d'autres caractéristiques que nous devrions ignorer comme entrées? Pour le savoir, regardez le graphique **Variable Importance** de nouveau.
+                </script>
+              </section>
+
+              <section class="slide" data-markdown>
+                <script type="text/template">
+                  #Exercice de groupe (suite): évaluation du modèle
+
+                  Nous allons regarder le rapport de performance de notre modèle, modifier quelques paramètres clés du modèle et comparer les résultats du modèle avant et après les modifications avant de recommencer l'entraînement.
+
+                  - Premièrement, nous regarderons l'exactitude de la classification sur la **Confusion Matrix** (matrice de confusion). 
+                    
+                  <img src="framework/img/workshop/confusion-matrix.png" alt="confusion matrix">
+
+                  - Le graphique à barres affiche quatre autres indicateurs de performance: **Precision** (la précision), **Recall** (le rappel), **F1-Score** (le score F1) et **Accuracy** (l'exactitude). Si vous souhaitez en savoir plus, Dataiku vous fournit une petite définition dans la barre latérale à droite. 
+                  
+                  <img src="framework/img/workshop/perf-markers.png" alt="indicateurs de performance">
+
+- Vous verrez aussi la **Cost Matrix** (matrice des gains), qui nous permet d'évaluer le gain pour chaque bonne prédiction.
+
+<img src="framework/img/workshop/cost-matrix.png" alt="indicateurs de performance">
+
+Toutes ces mesures de performances peuvent être améliorées en appliquant nos algorithmes d'apprentissage à nouveau et en leur apportant des changements.
+
+                </script>
+              </section>
+<section class="slide" data-markdown>
+  <script type="text/template">
+    # Comprendre les objectifs de performance et de qualité
+
+    Une performance parfaite est rare, voire impossible.
+     
+    Par conséquent, les objectifs de performance doivent être déterminés en fonction de l'objectif final du modèle en développement.
+    
+    Par exemple, le but de notre analyse pour les ressources humaines est de prédire quels employés importants seront les prochains à quitter leur poste.
+    Ainsi, il sera possible de leur offrir une promotion, une augmentation de salaire ou une prime quelconque pour les encourager à rester avant qu'ils se cherchent un emploi dans une autre entreprise.
+     
+    Une étape importante de l'identification des risques dans tout modèle est de comprendre la tolérance à l'erreur.
+
+    Par exemple, le risque de faux négatifs en faisant le diagnostic d'un cancer comparativement aux risques de faux négatifs dans les moteurs de suggestions marketing.
+
+    Dans notre analyse des ressources humaines pour prédire l'attrition de chaque employé, quels sont les faux négatifs et les faux positifs les plus « dangereux »?
+
+  </script>
+</section>
+<section class="slide" data-markdown>
+<script type="text/template">
+# Exercice n° 5: modifier les paramètres d'entraînement (10 minutes)
+
+Maintenant, nous changerons les paramètres d'entraînement afin de déterminer les entrées et les algorithmes les plus susceptibles de nous donner les résultats souhaités.
+
+1. Revenez dans la liste de modèles (« Models »). 
+2. Sélectionnez « Settings » dans le coin droit supérieur
+3. Essayez d'enlever quelques caractéristiques (« Features ») que vous considérez inutiles. (p. ex.: « Genre »).
+4. Allez dans « Algorithms » et activez les algorithmes « Random Forest » et « XGBoost ». Ces deux algorithmes utilisent plusieurs arbres de décisions pour optimiser les prédictions.
+5. Cliquez sur « Train » de nouveau pour exécuter vos algorithmes modifiés.
+5. De retour dans la liste « Models », trouvez le meilleur mode en regardant attentivement chacun des rapports. Pour prendre une décision rapidement, choisissez un modèle en jetant un oeil à roc-auc: ![roc-auc](framework/img/workshop/roc-auc.png)
+
+</script>
+</section>
+     <section class="slide" data-toc data-markdown>
+    <script type="text/template">
+      # Difficultés de l'apprentissage automatique
+
+      Le **surajustement** est un problème rencontré lorsque l'utilisateur trouve une hypothèse prédisant parfaitement les données d'entraînement, mais qui n'est pas assez généralisée pour prédire les nouvelles données.
+
+      La fonction « mémorise » les sorties des données entrées au départ, mais elle s'applique pas bien à de nouvelles données.
+
+      Habituellement, en cas de **surajustement**, le modèle fait très peu d'erreurs de prédiction pour les données d'entraînement, mais beaucoup d'erreurs pour les nouvelles données.
+
+      - En revanche, en cas de **sous-ajustement**, le modèle fait beaucoup d'erreurs pour les données d'entraînement.
+
+
+    </script>
+  </section>                         
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Amélioration des résultats
+        ## Et l'humain là-dedans? 
+        ![humain et boucle](framework/img/workshop/human-in-loop.png)
+      </script>
+    </section>
+       
+             <section class="slide" data-toc data-markdown>
+              <script type="text/template">
+                # Problèmes d'éthique avec l'IA
+                
+                Vous souvenez-vous de la colonne « Genre » dans notre ensemble de données? Est-ce qu'il s'agissait d'une colonne utile pour déterminer l'attrition? Qu'en est-il de la représentation des personnes non binaires?
+
+                Voici quelques problèmes éthiques à considérer en travaillant avec l'intelligence artificielle:
+
+                1. Les machines intelligentes remplacent certains employés, qui se retrouvent au chômage.
+                2. Biais dans les modèles: modèles racistes et sexistes.
+                  - N'oubliez pas que tous les modèles d'intelligence artificielle ont été entraînés par des données fondées sur le comportement humain. Par conséquent, les machines héritent nos valeurs et nos préjugés.
+                  - Une étude a démontré la présence d'un biais de sélection humain chez des cadres approuvant ou refusant des demandes de prêt.
+                3. Erreur dans les modèles pendant la production.
+                4. Boîte noire: un modèle impossible à interpréter par les humains. Il s'agit d'un problème courant en apprentissage profond où l'ordinateur en est arrivé à une solution dont les humains sont incapables de comprendre la démarche.
+
+                <hr>
+                ### Ressources (en anglais)
+
+                [Benefits and Risks of AI](https://futureoflife.org/background/benefits-risks-of-artificial-intelligence/
+)
+
+              </script>
+            </section>
+            
+               <section class="slide title" data-markdown>
+                 <script type="text/template">
+                   # Probabilité et certitude
+                 </script>
+               </section>
+            <section class="slide" data-markdown>
+              <script type="text/template">
+              # Discussion! (15 minutes)
+
+              En groupe de quatre, discutez des problèmes suivants:
+              
+              ## Problème n° 1
+              1. Si vous appreniez qu'une nouvelle voiture autonome d'Uber a eu un accident qui a entraîné la mort de ses passagers, voudriez-vous monter dans l'une de ces voitures?
+
+              1. Si vous avez répondu « Non », changeriez-vous d'avis si le coût d'une course dans une voiture autonome d'Uber était beaucoup plus faible que celui d'une course dans une voiture avec conducteur?
+
+              1. Si vous avez répondu « Non », changeriez-vous d'avis si vous saviez que les conducteurs humains étaient plus susceptibles de causer un accident que les voitures autonomes?
+              
+              ## Problème n° 2
+
+              1. Après être allée chez votre docteure, celle-ci vous dit que selon vos résultats calculés par l'IA, vous avez 60 % de chances d'être atteinte d'une maladie mortelle. Quand vous demandez d'avoir une confirmation de la certitude des résultats de la part d'un humain, la docteure vous dit que l'IA offre des prédictions beaucoup plus exactes pour le cancer que les méthodes de diagnostic traditionnelles.
+
+                  - Accepteriez-vous de suivre un traitement pour votre maladie sur le champ? 
+                  - Préféreriez-vous obtenir un diagnostic selon une méthode plus probable et certaine avant de commencer un traitement?
+          
+              </script>
+            </section>
+                <section class="slide" data-markdown>
+                  <script type="text/template">
+                    # Probabilité ou certitude?
+
+                    Après avoir discuté avec votre groupe, pensez-vous être prête à vivre dans un monde où la plupart des décisions sont prises selon les probabilités, ou cherchez-vous à obtenir la certitude à tout coup? 
+
+                    <img width="60%;" src="framework/img/workshop/cher.gif" alt="Cher de Clueless">
+                  </script>
+                </section>
+            <section class="slide title" data-markdown>
+              <script type="text/template">
+                # Exercice final
+                ## Jouez avec votre propre ensemble de données!
+              </script>
+            </section>
+              <section class="slide" data-markdown>
+                <script type="text/template">
+                # Exercice final (20 minutes ou la durée de votre choix)
+                  1. Travaillez seule ou en équipe de quatre et pensez à une cause qui vous tient à coeur (p. ex.: le réchauffement climatique, la crise des réfugiés, le cancer) ou pensez à un problème que vous rencontrez au travail (p. ex.: trouver des donateurs pour votre nouvelle initiative). Faites un remue-méninges à propos des manières d'utiliser l'apprentissage automatique pour résoudre des problèmes. 
+                  2. Essayez de trouver un ensemble de données lié à votre cause ou à votre problème avec lequel vous pourrez travailler. Visitez le site http://kaggle.com ou le site des ensembles de données du Gouvernement du Canada: http://opendata.gc.ca.
+                  3. Créez un nouveau projet dans Dataiku et importez votre nouvel ensemble de données. 
+                  4. Nettoyez vos données, au besoin. 
+                  5. Suivez les instructions de l'exercice de groupe réalisé plus tôt pour essayer des modèles d'apprentissage automatique sur votre ensemble de données. 
+                  6. Qu'avez-vous appris en analysant votre ensemble de données? 
+                </script>
+              </section>
+                          <section class="didit slide title" data-markdown>
+                            <script type="text/template">
+                              # Fini!
+                              ## C'est le temps de présenter nos projets! 
+                          
+                            </script>
+                          </section>
+                        
+                        
+                            
+                                <section class="slide" data-toc data-markdown>
+                                  <script type="text/template">
+                                    # La suite 
+                                    
+                                    ## Pour en savoir plus (en anglais): 
+
+                                    - [Udacity](https://www.udacity.com/ai): Jetez un coup d'oeil au nanoprogramme sur l'IA, l'apprentissage automatique et l'apprentissage profond sur Udacity. Cette plate-forme regorge de cours d'initiation. 
+                                    - [Le cours Machine Learning A-Z sur Udemy](https://www.udemy.com/machinelearning/learn/v4/overview): Une bonne introduction à l'apprentissage automatique mettant surtout l'accent sur le Python. 
+                                    - [Le cours Machine Learning avec Andrew Ng sur Coursera](https://www.coursera.org/learn/machine-learning)
+                                    - Si vous souhaitez comprendre les sciences des données en général, consultez cette excellente liste des meilleurs cours sur les [sciences des données en ligne](https://medium.freecodecamp.org/i-ranked-all-the-best-data-science-intro-courses-based-on-thousands-of-data-points-db5dc7e3eb8e)
+  
+                                    ## Continuez d'expérimenter avec des ensembles de données: 
+
+                                    - http://kaggle.com
+                                    - http://opendata.gc.ca 
+                                    
+                                    ## À lire: 
+
+                                    - [Free Code Camp](https://medium.freecodecamp.org/tagged/data-science) Free Code Camp est un blogue consacré aux sciences des données comprenant des articles annoncant la sortie de nouveaux cours sur l'IA. 
+                                    - Lisez le [blogue de Kathryn Hume](https://quamproxime.com/) pour obtenir une analyse fascinante de ce secteur en croissance.
+                                    - La firme de Toronto [Georgian Partners](https://georgianpartners.com/blog-archive/) est un chef de file du secteur de l'IA qui publie d'excellents articles sur son blogue. 
+                                  </script>
+                                </section>
+                                <section class="slide title" data-markdown>
+                        <script type="text/template">
+                          # Exercice facultatif
+                          ##Le Python et Dataiku
+                        </script>
+                      </section>
+                    <section class="slide" data-markdown>
+                      <script type="text/template">
+                        # Bibliothèque Python pour l'IA
+
+                        Il existe des bibliothèques Python très pratiques qui nous facilitent la tâche en travaillant avec des données et l'apprentissage automatique. Les bibliothèques logicielles sont du code prérédigé, des instructions, qui nous permet d'accomplir des tâches compliquées sans écrire de nouveau code. Bien conçue, la bibliothèque **sklearn** est celle avec laquelle nous travaillerons aujourd'hui.
+                      </script>
+                    </section>
+                    <section class="slide" data-markdown>
+                      <script type="text/template">
+                        # Étapes pour utiliser le Python avec l'apprentissage automatique
+
+                        Jusqu'à maintenant, nous avons travaillé avec l'interface utilisateur graphique de Dataiku. Voici les étapes pour faire exactement la même chose, mais en utilisant seulement du code Python:
+
+                        1. Lancez la plate-forme sklearn.
+                        1. Chargez l'ensemble de données.
+                        1. Traitez le prétraitement des données.
+                        1. Créez des ensembles de données d'entraînement et d'essai. 
+                        1. Prétraitement: entrez les valeurs manquantes, gérez les caractéristiques des catégories et normalisez les caractéristiques numériques.
+                        1. Choisissez le mode de classification (« Classifier »).
+                        1. Entraînez un mode de classification avec un ensemble de données d'entraînement.
+                        1. Évaluez le modèle appris.
+                        1. Faites des prédictions.
+
+                      </script>
+                    </section>
+                    <section class="slide" data-toc data-markdown>
+                      <script type="text/template">
+                        #  Passer à Jupyter Notebook et comprendre le code en Python
+                        1. Sélectionnez le modèle le mieux entraîné selon l'évaluation métrique.
+                        1. Allez dans Deploy, Jupyter Notebook.
+                        1. Faites toutes les étapes de la diapositive précédente dans une cellule de Jupyter Notebook.
+                        1. Exécutez toutes les cellules et vérifiez la sortie de chacune.
+
+                      </script>
+                    </section>
+                    <section class="slide" data-toc data-markdown>
+                      <script type="text/template">
+                        # Exercice facultatif: changer le code (20 minutes)
+
+                        Pour cet exercice, formez des groupes de trois. Vous manipulerez le code dans Jupyter à l'aide de la documentation de la bibliothèque Python sklearn. 
+
+                        1. Changez le modèle de classification de « Random Forest » à « Logistic Regression ». **Conseil éclair**: Consultez la [documentation](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
+                        2. Entraînez et mettez à l'essai le nouveau modèle. Les résultats se sont-ils améliorés? 
+                        3. Changez la mesure d'évaluation pour « F-score ». Faites appel à la [documentation pour F-score](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html)
+                        4. Changez les paramètres de la classification LR comme « solver », « Regularization penalty » et « inverse of regularization strength C » et vérifiez les effets des changements sur la performance du modèle. (Référez-vous aux paramètres dans le premier lien du manuel de documentation n° 1)
+)
+                      </script>
+                    </section>
+
+
+    <!-- Dernière diapositive -->
+    <section class="slide last">
+      <h1>Merci!</h1>
+      <h2 class="heading-bg">
+        <span>Initiation à l'intelligence artificielle</span>
+      </h2>  
+
+      <img class="instructor" src="framework/img/workshop/Parinaz.jpg" alt="Instructor Name">
+      <h2><span class="cursive">avec</span> Parinaz Sobhani</h2>  
+      <ul>
+        <!-- <li><a href="mailto:">allo@courriel.com</a></li> -->
+        <!-- <li><a href="https://georgianpartners.com/team_member/parinaz-sobhani/">https://georgianpartners.com/team_member/parinaz-sobhani/</a></li> -->
+        <li><a href="http://twitter.com/PariAIML">@PariAIML</a></li>
+      </ul>
+
+      <p class="attribution">Présentation créée par <a href="http://christinatruong.com">Christina Truong</a> à partir de <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> et de <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+    </section>
+
+  </main><!-- section principale cls -->
+  
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires du module dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Prend tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>
