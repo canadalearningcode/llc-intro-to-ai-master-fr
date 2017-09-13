@@ -79,7 +79,7 @@
       </ul>
       
       <div class="sponsor">
-        <p>En collaboration avec<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
+        <p>En collaboration avec<br> <img src="framework/img/logo-accenture.svg" alt="Accenture"></p>
       </div>
 
       <footer>
@@ -152,7 +152,8 @@
             <br style="clear:both;margin-top: 50px;">
             <br style="clear:both;margin-top: 50px;">
             <img src="framework/img/workshop/amazon-logo_transparent.png" alt="amazon" width="150" style="float:left;  margin-right: 30px">
-            **Amazon** utilise l'IA pour son algorithme de suggestions d'achats potentiels.
+            **Amazon** utilise l'intelligence artificielle dans son moteur de recommandations.
+
 
           </script>
         </section>
@@ -558,7 +559,7 @@ Pensez à toutes les formidables applications qui nous permettent déjà de prof
             1. Exécutez le fichier .exe à l'intérieur du dossier afin d'installer Virtual Box.
             1. Importez la machine virtuelle Data Science Studio dans Virtual Box, soit en double-cliquant ou en allant dans Fichier > Importer un appareil virtuel.
             1. La fenêtre d'importation d'un appareil virtuel s'ouvre. Vous n'avez aucun paramètre à changer et il ne reste qu'à cliquer sur l'icône de dossier et à sélectionner le fichier de la machine. 
-            1. Quand la machine virtuelle est importée, cliquez sur Démarrer pour qu'elle s'exécute.
+            1. Quand la machine virtuelle est importée, cliquez sur Démarrer pour qu'elle s'exécute.(Il est possible que cela ne fonctionne pas. Vous obtiendrez donc une erreur disant qu’une variation de `VT-x n'est pas disponible...`. Vous devrez donc activer la virtualisation dans le BIOS. Pour ce faire, demandez à un mentor de vous aider.)
             1. Quand la machine virtuelle aura terminé de se charger, vous verrez une bannière de bienvenue avec des informations de connexion.
             1. Vous ne vous connecterez pas dans la machine virtuelle, mais dans votre navigateur Chrome ou Firefox (pas dans la machine virtuelle). Dans le navigateur, entrez l'adresse URL affichée sur la bannière de l'interface de Data Science Studio. L'interface de DSS s'affichera. L'URL à entrer est souvent http://127.0.0.1:10000 (mais ce n'est pas toujours le cas, pour en être sûre, vérifiez celle sur la bannière).
             1. Dataiku exige que vous vous inscriviez la première fois que vous chargez l'application. L'inscription est gratuite et ne prend que 5 à 10 minutes, le temps d'attendre le courriel de confirmation. Profitez-en pour prendre une petite pause!
@@ -706,16 +707,37 @@ Pensez à toutes les formidables applications qui nous permettent déjà de prof
                       </section>
                           <section class="slide" data-markdown>
                             <script type="text/template">
-                              # Terminologie de l'apprentissage automatique (AA)
-                              **Prédictions:** sortie de modèle prédisant le résultat en trouvant des formes constantes dans les données.
+                              # Termes de l'AA
 
-                              **Modèle:**  fonction mathématique, c'est-à-dire, une relation entre un ensemble de données (entrées) et un ensemble de sorties. p. ex.:
+                               ## Instance (exemple, cas, enregistrement) :
+                               Objet unique à partir duquel un modèle sera appris ou sur lequel un modèle sera utilisé. Les instances sont décrites par des vecteurs de caractéristique.
+                                                             
+                               ## Attribut (champ, variable, caractéristique)
+                               Quantité décrivant une instance. Un attribut a un domaine défini par le type d’attribut, qui indique les valeurs pouvant être adoptées par un attribut. Une caractéristique précise l’attribut et sa valeur. Par exemple, « couleur » est un attribut. ``Couleur est bleu`` est une caractéristique d’un exemple.
+                                                            
+                              Voici des types de domaines fréquents :
+                                                            
+                                ### Catégorique
+                                Nombre fini de valeurs discrètes. Le type nominal indique que les valeurs n’ont pas d’ordre précis, comme c'est le cas avec les noms de famille et les couleurs. Le type ordinal indique qu’il y a un ordre déterminé, comme un attribut prenant les valeurs faible, moyen ou élevé.
 
-                              `f(x) = x²`
+                                ### Continu (quantitatif)
+                                Sous-ensemble de nombres réels dans lequel il y a une différence mesurable entre les valeurs possibles. Habituellement, les nombres entiers sont traités comme étant de type continu dans les problèmes pratiques.
+                                                             
+                              ## Prédictions : 
+                               Sortie de modèle prédisant des résultats en trouvant des formes dans les données.
+                                                             
+                              ## Modèle : 
+                              Structure et interprétation de celle-ci résumant en totalité ou en partie un ensemble de données à des fins de description ou de prédiction. La plupart des algorithmes inductifs génèrent des modèles à utiliser comme classifieurs, valeurs indépendantes, motifs pour une utilisation par des humains ou entrée pour les prochaines étapes du processus d’extraction de connaissances dans les bases de données (processus appelé « KDD » en anglais, pour « Knowledge Discovery in Databases »).
+                                                             
+                              ## Modèle de classification / classifieur Fonction mathématique associant des instances sans étiquette à des classes (discrètes).
+                              Par exemple, associer tous les employés d’IBM aux classes indiquant si l’employé partira dans les six prochains mois ou non.
+                                                            
+                              ## Modèle de régression / variable indépendante :
+                              Association d’instances sans étiquette (valeurs indépendantes) à une vraie valeur, comme « montant » ou « poids ».
+                                                            <hr>
+                              ### Références (en anglais)
+                                                            [http://robotics.stanford.edu/~ronnyk/glossary.html](http://robotics.stanford.edu/~ronnyk/glossary.html)
 
-                              Ces fonctions, que l'on appelle « modèles », peuvent être utilisées pour faire des prédictions, par exemple, pour prédire quel employé d'IBM est le plus susceptible de quitter son emploi prochainement.
-                              
-                              **Méthode/algorithme d'apprentissage:** optimisation.
 
 
                             </script>
