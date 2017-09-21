@@ -45,7 +45,7 @@
         
         <h2>À télécharger<br> et à installer</h2>
         <ol class="downloads">
-          <li>Fichiers des apprenants (dossier zip en français, lien vers les fichiers en anglais): <a href="https://github.com/ladieslearningcode/llc-intro-to-ai-master/archive/master.zip">http://bit.ly/llc-intro-to-ai</a>
+          <li>Fichiers des apprenants (dossier zip en français, lien vers les fichiers en anglais): <a href="https://github.com/ladieslearningcode/llc-intro-to-ai-master-fr/archive/master.zip">http://bit.ly/fichiers-ia-llc</a>
             <ul>
               <li>Extraire les fichiers des apprenants (<em>Extraire tout</em> sur Windows)</li>
               <li>Ouvrir le fichier <em>diapositives.html</em> dans le navigateur pour voir les diapositives</li>
@@ -70,13 +70,13 @@
       </h1>
       
       <!-- AJOUTEZ LES INFORMATIONS SUR LE FORMATEUR -->
-      <img class="instructor" src="framework/img/workshop/Parinaz.jpg" alt="Instructor Name">
+      <!-- <img class="instructor" src="framework/img/workshop/Parinaz.jpg" alt="Instructor Name">
       <h2><span class="cursive">avec</span> Parinaz Sobhani</h2>  
       <ul>
         <!-- <li><a href="mailto:">allo@courriel.com</a></li> -->
         <!-- <li><a href="https://georgianpartners.com/team_member/parinaz-sobhani/">https://georgianpartners.com/team_member/parinaz-sobhani/</a></li> -->
-        <li><a href="http://twitter.com/PariAIML">@PariAIML</a></li>
-      </ul>
+      <!--   <li><a href="http://twitter.com/PariAIML">@PariAIML</a></li>
+      </ul>  -->
       
       <div class="sponsor">
         <p>En collaboration avec<br> <img src="framework/img/logo-accenture.svg" alt="Accenture"></p>
@@ -526,9 +526,7 @@ Pensez à toutes les formidables applications qui nous permettent déjà de prof
               <script type="text/template">
                 # Option en ligne
 
-                 # Online Option
-
-                Students will connect via AWS. Details coming soon...
+              
 
               </script>
             </section>
@@ -648,14 +646,17 @@ Pensez à toutes les formidables applications qui nous permettent déjà de prof
                   1. Vous remarquerez que certains champs du graphique ne peuvent être remplis que par des colonnes numériques. Par exemple, la colonne Y de votre graphique à barre doit comprendre des données numériques pour s'afficher correctement. Changez les colonnes et l'aspect du graphique pour voir s'il y a une corrélation entre les données. Amusez-vous!
                   ![show by](framework/img/workshop/X-Y-VALUES.png)
                   1. Facultatif: expérimentez avec des cartes géographiques pour vos colonnes de longitude et de latitude! Essayez de voir s'il est possible d'afficher les couleurs préférées selon l'emplacement de chacun!
-                    1. Head on back to the explore tab to see the table again. 
-                    1. From the Actions dropdown in the upper right hand corner, select Prepare again. 
-                    1. In the scripts are to the left of the table, click on "Add a step".
-                    1. Select the geography checkbox ![geography checkbox](framework/img/workshop/geocheckbox.png)
-                    1. Select “create geopoint from lat/lon ![geopoint](framework/img/workshop/create-geo-point.png)
-                    1. Fill in the longitude and latitude inputs with their respective columns and give a name to the new geopoint column. ![create geopoint](framework/img/workshop/geopoint.png)
-                    1. Click on Run to run the recipes  You will be asked to drop your original data and rebuild in order not to affect your schema. Do that. 
-                    1. At the bottom, a new prepared dataset will be available to click on. Go to it and explore your new data. Notice the new column for your Geo Point? Now you can create geographic maps.  
+                    1. Retournez dans l’onglet d'exploration pour voir le tableau de nouveau.  
+                    1. Dans le menu déroulant Actions du coin supérieur droit, sélectionnez Prepare. 
+                    1. Dans les scripts à gauche du tableau, cliquez sur Add a step.
+                    1. Cochez la case Geography.  ![geography checkbox](framework/img/workshop/geocheckbox.png)
+                    1. Sélectionnez Create geopoint from lat/lon.
+ ![geopoint](framework/img/workshop/create-geo-point.png)
+                    1. Ajoutez les entrées de longitude et de latitude dans leurs colonnes respectives et nommez la nouvelle colonne « geopoint ».
+ ![create geopoint](framework/img/workshop/geopoint.png)
+                    1. CCliquez sur Run pour exécuter le tout. Le logiciel vous demandera d'abandonner vos données originales et de recommencer pour ne pas affecter le schéma: acceptez.
+                    1. En bas, vous verrez un nouvel ensemble de données prêt à utiliser sur lequel cliquer. Cliquez sur l'ensemble et explorez vos nouvelles données. Avez-vous remarqué la nouvelle colonne geopoint? Maintenant, vous pouvez créer des cartes géographiques.
+
 
                 </script>
               </section>
@@ -671,9 +672,8 @@ Pensez à toutes les formidables applications qui nous permettent déjà de prof
 
                       Savez-vous comment nous intégrerons cela dans la solution? À l'aide de l'apprentissage automatique. 
                       
-                      <img src="framework/img/workshop/willis.gif" alt="Willis">
+                      <img src="framework/img/workshop/willis.gif" alt="de kesse?">
 
-                      « de kessé? »
                     </script>
                   </section>
                   
@@ -740,7 +740,7 @@ Pensez à toutes les formidables applications qui nous permettent déjà de prof
                               Association d’instances sans étiquette (valeurs indépendantes) à une vraie valeur, comme « montant » ou « poids ».
                                                             <hr>
                               ### Références (en anglais)
-                            [http://robotics.stanford.edu/~ronnyk/glossary.html](http://robotics.stanford.edu/~ronnyk/glossary.html)
+[http://robotics.stanford.edu/~ronnyk/glossary.html](http://robotics.stanford.edu/~ronnyk/glossary.html)
 
 
 
@@ -944,26 +944,26 @@ Revenons à notre problème des employés d'IBM. Nous allons arrêter l'attritio
 
                           </script>
                         </section>
-                            <section class="slide" data-markdown>
-                              <script type="text/template">
-                                <img class="flow-hexagon" src="framework/img/workshop/datascienceflow-05.png" alt="Data Collection">
+<section class="slide" data-markdown>
+  <script type="text/template">
+    <img class="flow-hexagon" src="framework/img/workshop/datascienceflow-05.png" alt="Data Collection">
 
-                              # Entraîner des modèles d'apprentissage automatique
-                              ##  Un modèle d'apprentissage automatique supervisé est une fonction qui accepte une entrée et retourne une sortie.
-                                F(X)=y est une fonction dans laquelle F(X) est un « bon indicateur » de la valeur de y.
-                                Par exemple. le nombre d'années à occuper le même poste est un bon indicateur pour l'attrition (si un employé est susceptible de garder ou de quitter son poste).
-                              ## Étapes pour résoudre un problème avec l'apprentissage automatique:
-                                1. Déterminer les paires entrée-sortie.
-                                2. Encoder les entrées et les sorties.
-                                3. Choisir une classe de modèles d'apprentissage automatique et trouver le meilleur modèle en expérimentant.
+  # Entraîner des modèles d'apprentissage automatique
+  ##  Un modèle d'apprentissage automatique supervisé est une fonction qui accepte une entrée et retourne une sortie.
+    F(X)=y est une fonction dans laquelle F(X) est un « bon indicateur » de la valeur de y.
+    Par exemple. le nombre d'années à occuper le même poste est un bon indicateur pour l'attrition (si un employé est susceptible de garder ou de quitter son poste).
+  ## Étapes pour résoudre un problème avec l'apprentissage automatique:
+    1. Déterminer les paires entrée-sortie.
+    2. Encoder les entrées et les sorties.
+    3. Choisir une classe de modèles d'apprentissage automatique et trouver le meilleur modèle en expérimentant.
 
-                                <hr>
-                                ### Ressources (en anglais)
-                                [A Non-Technical Introduction to Machine Learning](https://medium.com/safegraph/a-non-technical-introduction-to-machine-learning-b49fce202ae8) 
+    <hr>
+    ### Ressources (en anglais)
+    [A Non-Technical Introduction to Machine Learning](https://medium.com/safegraph/a-non-technical-introduction-to-machine-learning-b49fce202ae8) 
 
 
-                              </script>
-                            </section>
+  </script>
+</section>
                                 <section class="slide" data-markdown>
                                   <script type="text/template">
                                     <img class="flow-hexagon" src="framework/img/workshop/datascienceflow-04.png" alt="Data Collection">
@@ -1041,19 +1041,21 @@ Revenons à notre problème des employés d'IBM. Nous allons arrêter l'attritio
                     
                   <img src="framework/img/workshop/confusion-matrix.png" alt="confusion matrix">
 
-                  The confusion matrix is going to prove very handy for us to determine which model we'll go with in the end. It enables us to see how many times the model predicted false positives and how many times false negatives. In other words, we can see in the table above that there were 25 times that the model predicted an employee would not quit their job at IBM, and 35 times that it predicted they would quit when in fact they wouldn't. 
+                  La matrice de confusion nous sera très utile pour choisir le modèle à utiliser. Elle nous permet de voir combien de faux positifs et de faux négatifs ont été prédits par le modèle. Autrement dit, dans le tableau ci-dessus, nous voyons que le modèle a prédit 25 fois qu’un employé n&#39;allait pas quitter son emploi chez IBM et 35 fois qu’un employé allait quitter de manière erronée.
 
-                  - Then, you'll see a bar graph showing another markers of performance: **Precision**, **Recall**, **F1-Score** an **Accuracy**. Dataiku even gives us four handy definitions in the sidebar to the right. 
+                  - De plus, dans le graphique à barres, vous verrez d’autres indicateurs de
+                  performance: **Precision**, **Recall**, **F1-Score**, et **Accuracy**. À ce propos, Dataiku nous donne quatre définitions pratiques 
 
                   <img src="framework/img/workshop/perf-markers.png" alt="performance markers">
 
-                  **Accuracy** is the proportion of overall correct positive and negative predictions in the sample. And while it may be tempting to use this metric to choose our model, it's not the best marker. Imagine that in our dataset 90% of all employees did not leave IBM and 10% did. And then imagine that the model predicts that 100% of the employees stayed. This would mean that model would have an accuracy of 90% which seems really good, except it would have missed every single person that actually quit IBM. So, accuracy is not the right evaluation metric in this case
+                  L’exactitude (Accuracy) est la proportion de prédictions positives et négatives dans l’échantillon. Bien qu’il soit tentant d’utiliser cette métrique pour choisir le bon modèle, ce n&#39;est pas l’indicateur idéal. Imaginez que dans notre ensemble de données, 90 % des employés sont restés chez IBM et que 10 % sont partis. Ensuite, imaginez que ce modèle prédise que 100 % des employés sont restés. Ce modèle aurait donc un taux d’exactitude de 90 %, ce qui est très bien, mais il n&#39;aurait prédit aucun départ d’un employé d’IBM. C’est pourquoi, dans ce cas, l&#39;exactitude n&#39;est pas la bonne métrique d’évaluation.
 
-                  **Precision** is the number of true positives divided by the total number of instances predicted as positive”. 
+                  **La précision** est le nombre de vrais positifs divisé par le nombre total d’instances positives selon la prédiction.
 
-                  **Recall** gives us the proportion of "positive"  actual records correctly predicted as positive.
+                  **La métrique de rappel** (Recall) nous donne la proportion d’enregistrements positifs ayant été prédits correctement comme positifs.
 
-                  **F1-Score** This refers to the harmonic mean between precision and recall. Since it's a much more informative marker than accuracy, precision and recall **we're going to use this to choose our model.** 
+                  **La métrique F mesure ou F1 mesure** (F1-Score) indique la moyenne harmonique entre l'exactitude et le rappel. Comme il s'agit d’un indicateur bien plus éclairant que l'exactitude, la précision et le rappel, **c'est celui que nous utiliserons pour choisir notre modèle.**
+
 
                 </script>
               </section>
@@ -1074,7 +1076,7 @@ Revenons à notre problème des employés d'IBM. Nous allons arrêter l'attritio
 
     Dans notre analyse des ressources humaines pour prédire l'attrition de chaque employé, quels sont les faux négatifs et les faux positifs les plus « dangereux »?
 
-    <p class="delayed">That's right false negatives are more risky because there are people who will leave IBM that we wouldn't capture. </p>
+    <p class="delayed">C’est vrai: les faux négatifs sont plus risqués, car il y a des employés ayant quitté IBM que nous ne prédirions pas.</p>
 
   </script>
 </section>
@@ -1089,18 +1091,22 @@ Maintenant, nous changerons les paramètres d'entraînement afin de déterminer 
 3. Essayez d'enlever quelques caractéristiques (« Features ») que vous considérez inutiles. (p. ex.: « Genre »).
 4. Allez dans « Algorithms » et activez les algorithmes « Random Forest » et « XGBoost ». Ces deux algorithmes utilisent plusieurs arbres de décisions pour optimiser les prédictions.
 5. Cliquez sur « Train » de nouveau pour exécuter vos algorithmes modifiés.
-5. Back in the Models list, select the table view
+5. De retour dans Models, sélectionnez la vue tableau (table). 
+
 ![models table](framework/img/workshop/modelstable.png)
 
-You'll see in the table view that it's easier to compare our confusion matrix markers a lot easier. Including the F1 Score that we decided we'd rely on to choose our model. 
+Sous la vue tableau, il nous est beaucoup plus facile de comparer les indicateurs de la matrice de confusion. Ajoutez la métrique F1 mesure sur laquelle notre modèle se base.
+ 
 
-By these metrics, XGBoost seems to be the best performing algorithm. Let's go ahead and select the XGBoost model by clicking on it. Then, select **Deploy** from the upper right hand corner above the report. 
+Selon la métrique, XGBoost est l’algorithme le plus performant. Commencez par sélectionner le modèle XGBoost en cliquant sur celui-ci. Ensuite, sélectionnez Deploy dans le coin droit supérieur en haut du rapport.
 
-This will take you to the workflow graph where you can see what we've done with our dataset. 
+Vous verrez le graphique du flux de travaux où sont indiquées toutes les activités réalisées avec l'ensemble de données.
+ 
 
 ![workflow](framework/img/workshop/workflowdataiku.png)
 
-We fed it to dataiku and it was used to train the model. If we click on the prediction (XGBOOST) model you'll see a drawer open from the right giving you the option to apply the model on data to predict. 
+Nous avons envoyé notre ensemble de données à Dataiku et nous nous en sommes servis pour entraîner le modèle. Si vous cliquez sur le modèle de prédiction (XGBoost), vous verrez un tiroir ouvert à droite qui vous donne l’option d’appliquer le modèle sur des données.
+
 
 
 </script>
@@ -1108,25 +1114,25 @@ We fed it to dataiku and it was used to train the model. If we click on the pred
 <section class="slide" data-markdown>
 <script type="text/template">
   <img class="flow-hexagon" src="framework/img/workshop/datascienceflow-04.png" alt="Data Collection">
-  # Applying the model to other employees' data
+  # APPLIQUER LE MODÈLE AUX DONNÉES D'AUTRES EMPLOYÉS
 
-  Now that we have chosen our best performing model we can start using the model in practice to predict attrition from new employee data. 
+  Maintenant que nous avons choisi le modèle le plus performant, nous pouvons utiliser le modèle pour prédire l'attrition à partir de nouvelles données d'employés.
 
-  Now we can go and ask IBM to give us employee profiles without an attrition column and have our model predict who is most likely to leave IBM and then suggest reasons for why this may be. 
-  
-  Before we can apply the model on new data, we'll need to import a new dataset. Go ahead and click on the +Dataset button ![+dataset](framework/img/workshop/plusdataset.png) above the workflow to import the no-attrition-column-set csv file from your exercise-files folder. 
-  
-  Next, return to the workflow view and let's go ahead and click on the Score cup to to test our prediction model. 
+  Il est maintenant possible de demander à IBM des données d'employés sans colonne d'attrition et de laisser notre modèle prédire les employés les plus susceptibles de quitter l'entreprise afin de trouver des raisons pour leur départ.
+
+  Avant d’appliquer le modèle sur de nouvelles données, nous devons importer un nouvel ensemble de données. Cliquez sur le bouton +Dataset au-dessus du flux de travaux pour importer le fichier csv no-attrition-column-set du dossier de fichiers d'exercices. 
 
   ![workflow score gif](framework/img/workshop/workflowscoregif.gif)
 
-  Once you've run your predictions go ahead and explore the new dataset to see the three added columns with the attrition prediction and the probability associated with each guess. 
+  Ensuite, retournez à la vue des travaux et cliquez sur Score pour mettre à l'essai le modèle de prédiction.
 
-  This can be used by HR at IBM to target employees that are likely to leave and figure out how to entice them to stay. 
+  Quand vous aurez terminé vos prédictions, jetez un coup d’œil au nouvel ensemble de données pour voir les trois nouvelles colonnes avec la prédiction d'attrition et la probabilité de chacune.
 
-  You can also return to the bar graph of variables importance and make some suggestions to HR about what factors might be contributing most to attrition. For example Monthly Income, Daily Rate or No overtime. You might even want to create some chart visualizations for HR to see these correlations more clearly. 
+  Le service des ressources humaines d’IBM pourra utiliser ces données pour déterminer les employés les plus susceptibles de partir et trouver des façons de les garder au sein de l'entreprise.
 
-  It will now be up to HR to start experimenting with different solutions to prevent attrition at IBM. 
+  Vous pouvez aussi retourner au graphique à barres avec l’importance des variables et donner quelques pistes concernant les facteurs d'attrition les plus importants. Par exemple, le salaire mensuel (Monthly Income), le taux quotidien (Daily Rate) ou l'absence de temps supplémentaire (No overtime). Vous pourriez même créer des graphiques pour mettre en évidence les corrélations et les présenter.
+
+  Le service des ressources humaines pourra ensuite essayer différentes solutions pour prévenir l'attrition chez IBM.
 </script>
 </section>
      <section class="slide" data-toc data-markdown>
@@ -1151,7 +1157,7 @@ We fed it to dataiku and it was used to train the model. If we click on the pred
         ![humain et boucle](framework/img/workshop/human-in-loop.png)
 
 
-        If the model is not confident in any of its predictions on the instances in our dataset, e.g. the IBM employees in our set, we can ask a human to make a prediction based on his/her intuition and background information and we will add their prediction as an extra training instance to our training data. 
+        Si le modèle n’est pas certain de ses prédictions concernant des instances de l’ensemble de données, c'est-à-dire, sur les employés d’IBM dans l'ensemble, il est possible de demander à un humain de faire une prédiction selon son intuition et des renseignements de base. Nous ajouterons sa prédiction à nos données d'entraînement comme entraînement supplémentaire.
 
       </script>
     </section>
