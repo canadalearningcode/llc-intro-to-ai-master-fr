@@ -1,5 +1,5 @@
 # Ladies Learning Code
-# Introduction à l'information artificielle
+# Introduction à l'intelligence artificielle
 
 ## Liens rapides
 
