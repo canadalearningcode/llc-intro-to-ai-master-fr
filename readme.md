@@ -1,9 +1,12 @@
 # Ladies Learning Code
-# Introduction à l'information artificielle
+# Introduction à l'intelligence artificielle
 
 ## Liens rapides
 
 Aperçu des diapositives : https://ladieslearningcode.github.io/llc-intro-to-ai-master-fr/diapositives.html
+
+## Informations spéciales pour les instructeurs
+Veuillez noter que la plate-forme dataiku doit être activée à l'avance. Contactez-nous à content@canadalearningcode.ca pour votre hyperlien « bitly ».
 
 ## Sources
 
